@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="OpcUAClient" targetName="OpcUAClient" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_DIR="cmake-build-debug" BUILD_OPTIONS="-lopen62541">
+        <ADDITIONAL_GENERATION_ENVIRONMENT>
+          <envs>
+            <env name="LIB" value="/usr/lib" />
+          </envs>
+        </ADDITIONAL_GENERATION_ENVIRONMENT>
+      </configuration>
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6d78ae5e-c56d-4b65-a1ac-1aaf312a93e5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpcUAClient.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpcUAClient" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpcUAClient.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpcUAClient.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-nthread-latency.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main-nthread-latency.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG-Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG-Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/OpcUAServer.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/OpcUAServer.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/OpcUAServer.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/OpcUAServer.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/OpcUAServer.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/OpcUAServer.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/OpcUAServer.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/OpcUAServer.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/OpcUAServer" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/OpcUAServer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/OpcUAServer.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG/cmake-build-debug/OpcUAServer.cbp" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main-nthread-latency.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="129" column="14" selection-start-line="129" selection-start-column="14" selection-end-line="129" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>array</find>
+      <find>request</find>
+      <find>retval</find>
+      <find>UA_NODEID_NUMERIC</find>
+      <find>UA_NODEID_STRING</find>
+      <find>mu</find>
+      <find>not re</find>
+      <find>startTimeforEach</find>
+      <find>stopTimeforEach</find>
+      <find>check didn't pass on PIN</find>
+      <find>pthread</find>
+      <find>pi</find>
+      <find>iteration</find>
+      <find>clientNo</find>
+      <find>argv[2]</find>
+      <find>DB1</find>
+      <find>jj++</find>
+      <find>jj</find>
+      <find>args1</find>
+      <find>NodId</find>
+      <find>args</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/main.c" />
+        <option value="$PROJECT_DIR$/client-sample.cpp" />
+        <option value="$PROJECT_DIR$/arraysample.cpp" />
+        <option value="$PROJECT_DIR$/main-work-slow.cpp" />
+        <option value="$PROJECT_DIR$/../../weather_station/pm.c" />
+        <option value="$USER_HOME$/snap/telegram-desktop/common/Downloads/Telegram Desktop/pm.c" />
+        <option value="$USER_HOME$/snap/telegram-desktop/common/Downloads/Telegram Desktop/pm (2).c" />
+        <option value="$PROJECT_DIR$/main-nthread.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/main-nthread-latency.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="71" />
+    <option name="y" value="117" />
+    <option name="width" value="1210" />
+    <option name="height" value="1104" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="OpcUAClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpcUAClient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpcUAClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpcUAClient" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.OpcUAClient">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpcUAClient" TARGET_NAME="OpcUAClient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OpcUAClient" RUN_TARGET_NAME="OpcUAClient">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpcUAClient" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;opc.tcp://130.192.163.185:4888&quot; &quot;1000&quot; &quot;8&quot; &quot;115&quot; &quot;117&quot; &quot;119&quot; &quot;121&quot; &quot;123&quot; &quot;125&quot; &quot;127&quot; &quot;129&quot;" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpcUAClient" TARGET_NAME="OpcUAClient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OpcUAClient" RUN_TARGET_NAME="OpcUAClient">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.OpcUAClient" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d78ae5e-c56d-4b65-a1ac-1aaf312a93e5" name="Default" comment="" />
+      <created>1510326987855</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1510326987855</updated>
+      <workItem from="1510326990255" duration="5393000" />
+      <workItem from="1511185097925" duration="21000" />
+      <workItem from="1511265980939" duration="2260000" />
+      <workItem from="1511784240247" duration="73000" />
+      <workItem from="1511797118807" duration="10000" />
+      <workItem from="1511803887552" duration="1378000" />
+      <workItem from="1511873255990" duration="5600000" />
+      <workItem from="1517997262671" duration="1198000" />
+      <workItem from="1518528437011" duration="1178000" />
+      <workItem from="1518530376522" duration="607000" />
+      <workItem from="1518531261631" duration="1560000" />
+      <workItem from="1518536106571" duration="84000" />
+      <workItem from="1518536223291" duration="1594000" />
+      <workItem from="1518606667216" duration="7018000" />
+      <workItem from="1519047067419" duration="27000" />
+      <workItem from="1519053275055" duration="16252000" />
+      <workItem from="1519205757349" duration="1196000" />
+      <workItem from="1519227524919" duration="1149000" />
+      <workItem from="1519230734637" duration="12000" />
+      <workItem from="1519231039248" duration="1000" />
+      <workItem from="1519231425417" duration="106000" />
+      <workItem from="1519231541931" duration="7856000" />
+      <workItem from="1519375814323" duration="17605000" />
+      <workItem from="1519405690397" duration="11000" />
+      <workItem from="1519642500185" duration="4371000" />
+      <workItem from="1519656464201" duration="10666000" />
+      <workItem from="1519668359623" duration="2537000" />
+      <workItem from="1519720640700" duration="5068000" />
+      <workItem from="1519729045016" duration="147000" />
+      <workItem from="1519729500800" duration="3731000" />
+      <workItem from="1519734926074" duration="3549000" />
+      <workItem from="1519909690661" duration="21760000" />
+      <workItem from="1519989389516" duration="3689000" />
+      <workItem from="1519996875932" duration="44000" />
+      <workItem from="1519997950259" duration="4220000" />
+      <workItem from="1520003044458" duration="132000" />
+      <workItem from="1520004997236" duration="935000" />
+      <workItem from="1520007552887" duration="24000" />
+      <workItem from="1520007848802" duration="664000" />
+      <workItem from="1520008674250" duration="899000" />
+      <workItem from="1520013108633" duration="996000" />
+      <workItem from="1520014465078" duration="269000" />
+      <workItem from="1520014859196" duration="999000" />
+      <workItem from="1520016501140" duration="10000" />
+      <workItem from="1520017962681" duration="288000" />
+      <workItem from="1520070682519" duration="907000" />
+      <workItem from="1521020241564" duration="2169000" />
+      <workItem from="1521024694797" duration="9299000" />
+      <workItem from="1521037218729" duration="2216000" />
+      <workItem from="1521044769272" duration="145000" />
+      <workItem from="1521044942595" duration="1420000" />
+      <workItem from="1521203616323" duration="6000" />
+      <workItem from="1521293238371" duration="287000" />
+      <workItem from="1521463102461" duration="194000" />
+      <workItem from="1521471139025" duration="4000" />
+      <workItem from="1523620009398" duration="3829000" />
+      <workItem from="1523951085125" duration="754000" />
+      <workItem from="1523968359915" duration="1259000" />
+      <workItem from="1523973714136" duration="712000" />
+      <workItem from="1524140090129" duration="2840000" />
+      <workItem from="1524145116727" duration="97000" />
+      <workItem from="1524155644843" duration="1207000" />
+      <workItem from="1528795407365" duration="146000" />
+      <workItem from="1530263528110" duration="195000" />
+      <workItem from="1530264791628" duration="608000" />
+      <workItem from="1530706452206" duration="13205000" />
+      <workItem from="1530896295026" duration="3905000" />
+      <workItem from="1531325557140" duration="5822000" />
+      <workItem from="1531918745917" duration="362000" />
+      <workItem from="1532612258060" duration="227000" />
+      <workItem from="1532681823423" duration="979000" />
+      <workItem from="1540808112827" duration="73000" />
+      <workItem from="1540817849353" duration="19424000" />
+      <workItem from="1547483049078" duration="40355000" />
+      <workItem from="1547730514147" duration="2849000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="253015000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="64" y="-4" width="2425" height="1346" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09928481" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.64002687" weight="0.29526463" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6883815" weight="0.15691736" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49697784" weight="0.3286908" />
+      <window_info anchor="bottom" id="CMake" order="7" sideWeight="0.49563465" weight="0.3286908" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4936199" weight="0.32683378" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.19688684" side_tool="true" visible="true" weight="0.2898194" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" sideWeight="0.80311316" visible="true" weight="0.2898194" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1588428" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34064785" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39916405" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3291536" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3260188" />
+      <window_info anchor="bottom" id="CMake" order="8" weight="0.3291536" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3291536" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3291536" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main-work-slow.cpp</url>
+          <line>150</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>valueArr[0]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>check</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>valueArr</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(UA_Int32 *) value2.data</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>valueArr[1]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dataG</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>jj</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>checkp</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dataG[8]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/arraysample.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="96" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-sample.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="105" column="14" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/pthread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4338">
+          <caret line="241" column="12" selection-start-line="241" selection-start-column="12" selection-end-line="241" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open62541.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103896">
+          <caret line="5772" column="57" selection-start-line="5772" selection-start-column="57" selection-end-line="5772" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main-work-slow.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2052">
+          <caret line="114" column="24" selection-end-line="284" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/ir_hasher_c/ir_hasher.h" />
+    <entry file="file://$USER_HOME$/Downloads/ir_hasher_c/test_ir_hasher.c" />
+    <entry file="file://$PROJECT_DIR$/main-old.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/snap/telegram-desktop/common/Downloads/Telegram Desktop/pm (2).c" />
+    <entry file="file://$PROJECT_DIR$/main-nthread.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/snap/telegram-desktop/common/Downloads/Telegram Desktop/pm.c" />
+    <entry file="file://$PROJECT_DIR$/../../weather_station/pm.c" />
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5206">
+          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open62541.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="10690" column="27" selection-start-line="10690" selection-start-column="27" selection-end-line="10690" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/include/libmongoc-1.0/mongoc/mongoc.h" />
+    <entry file="file://$PROJECT_DIR$/main-nthread-latency_works_without_fieldbus.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7133">
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main-nthread-latency.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="129" column="14" selection-start-line="129" selection-start-column="14" selection-end-line="129" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
