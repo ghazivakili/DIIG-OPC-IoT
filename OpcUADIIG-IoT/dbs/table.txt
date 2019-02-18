@@ -1,0 +1,21 @@
+CREATE TABLE collections(
+    id UUID,
+    ts c,
+    node_id bigint,
+    data_1 bigint,
+    data_2 bigint,
+    data_3 bigint,
+    data_4 bigint,
+    data_5 bigint,
+    data_6 bigint,
+    data_7 bigint,
+    data_8 bigint,
+    event_binary blob,
+    event_json text,
+    PRIMARY KEY (id, ts)
+);
+
+DROP TABLE [keyspace].[Tablbename] ;
+DROP KEYSPACE [keyspace];
+
+TRUNCATE [TABLE] [keyspace_name.table_name]
