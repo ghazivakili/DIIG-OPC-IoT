@@ -213,12 +213,12 @@ void * Readdata(void *arguments) {
         pthread_mutex_lock(&full_mutex);
         UA_StatusCode check = UA_Server_readValue(server, args->NodeId, &value);
         //printf("read is GOOD\n");
-        checkValue= value.data;
+        //checkValue= value.data;
 
         pthread_mutex_unlock(&full_mutex);
 
 
-        if (check == UA_STATUSCODE_GOOD && checkValue!=NULL) {
+        if (check == UA_STATUSCODE_GOOD && value.data!=NULL) {
             pthread_mutex_lock(&full_mutex);
 
             valueArr = (UA_Int32 *) value.data;
