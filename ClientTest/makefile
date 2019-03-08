@@ -7,7 +7,7 @@
 ##
 ## This application is a client for opc-ua-diig-iot server for industrial application in industry 4.0
 
-Libs     := -lsnap7 
+Libs     := -lsnap7
 Wrapper  :=snap7.cpp
 
 CXX      := g++
@@ -17,14 +17,14 @@ CFLAGS   :=
 
 .PHONY: all clean
 
-all: 
-#	$(CXX) $(CXXFLAGS) -o srv_resourceless ../srv_resourceless.cpp ../$(Wrapper) $(Libs) 
-#	$(CXX) $(CXXFLAGS) -o apartner ../apartner.cpp ../$(Wrapper) $(Libs) 
-#	$(CXX) $(CXXFLAGS) -o ppartner ../ppartner.cpp ../$(Wrapper) $(Libs) 
+all:
+#	$(CXX) $(CXXFLAGS) -o srv_resourceless ../srv_resourceless.cpp ../$(Wrapper) $(Libs)
+#	$(CXX) $(CXXFLAGS) -o apartner ../apartner.cpp ../$(Wrapper) $(Libs)
+#	$(CXX) $(CXXFLAGS) -o ppartner ../ppartner.cpp ../$(Wrapper) $(Libs)
 #	$(CXX) $(CXXFLAGS) -o testStation testStation.cpp $(Wrapper) $(Libs)
-	$(CXX) $(CXXFLAGS) -o testClient main-client-test.cpp $(Wrapper) $(Libs) -lpthread
+	$(CXX) $(CXXFLAGS) -o testClientThrouput main-client-throuput.cpp $(Wrapper) $(Libs) -lpthread
+	$(CXX) $(CXXFLAGS) -o testClientRoundTrip main-client-roundtrip.cpp $(Wrapper) $(Libs) -lpthread
 
 clean:
 
-	$(RM) testStation 
-
+	$(RM) testStation

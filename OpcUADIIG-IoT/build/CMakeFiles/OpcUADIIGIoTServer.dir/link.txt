@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall   CMakeFiles/OpcUADIIGIoTServer.dir/src/open62541.c.o CMakeFiles/OpcUADIIGIoTServer.dir/src/main-server.cpp.o  -o OpcUADIIGIoTServer -lpthread /usr/local/lib/librdkafka.so /usr/lib/x86_64-linux-gnu/libcassandra.so -lrdkafka -lrt -lssl -lcrypto -ldl -lz /usr/lib/libmongoclient.a -lboost_thread -lboost_system -lboost_regex -Wl,-rpath,/usr/local/lib 

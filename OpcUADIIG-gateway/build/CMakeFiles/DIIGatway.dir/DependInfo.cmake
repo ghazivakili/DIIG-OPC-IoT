@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/photonextdev/workspace/DIIG/DIIG-Gateway/src/open62541.c" "/home/photonextdev/workspace/DIIG/DIIG-Gateway/build/CMakeFiles/DIIGatway.dir/src/open62541.c.o"
+  "/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.c" "/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/build/CMakeFiles/DIIGatway.dir/src/open62541.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -13,8 +13,8 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/photonextdev/workspace/DIIG/DIIG-Gateway/src/main-Gateway.cpp" "/home/photonextdev/workspace/DIIG/DIIG-Gateway/build/CMakeFiles/DIIGatway.dir/src/main-Gateway.cpp.o"
-  "/home/photonextdev/workspace/DIIG/DIIG-Gateway/src/snap7.cpp" "/home/photonextdev/workspace/DIIG/DIIG-Gateway/build/CMakeFiles/DIIGatway.dir/src/snap7.cpp.o"
+  "/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/main-Gateway.cpp" "/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/build/CMakeFiles/DIIGatway.dir/src/main-Gateway.cpp.o"
+  "/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/snap7.cpp" "/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/build/CMakeFiles/DIIGatway.dir/src/snap7.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

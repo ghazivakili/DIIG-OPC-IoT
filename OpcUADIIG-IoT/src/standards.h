@@ -148,7 +148,7 @@ void * Readdata(void *arguments) {
     UA_Variant_init(&v3);
 
     UA_Int32 *valueArr;
-
+    UA_Int32 *checkValue;
 
     //cassandra_setup();
     /*start cassandra setting*/
@@ -212,10 +212,11 @@ void * Readdata(void *arguments) {
         pthread_mutex_lock(&full_mutex);
         UA_StatusCode check = UA_Server_readValue(server, args->NodeId, &value);
         //printf("read is GOOD\n");
+        checkValue= value.data;
         pthread_mutex_unlock(&full_mutex);
 
 
-        if (check == UA_STATUSCODE_GOOD && value.data!=NULL) {
+        if (check == UA_STATUSCODE_GOOD && checkValue!=NULL) {
             pthread_mutex_lock(&full_mutex);
 
             valueArr = (UA_Int32 *) value.data;
@@ -291,13 +292,12 @@ void * Readdata(void *arguments) {
 
                 pthread_mutex_lock(&full_mutex);
                 send_kafka(Intstring.str(),"localhost:9092","test");
-                pthread_mutex_unlock(&full_mutex);
-                pthread_mutex_lock(&full_mutex);
                 cass_uuid_gen_time(uuid_gen, &uuid);
                 insert_into_collections(session, args->NodeId.identifier.numeric , uuid, valueArr);
                 pthread_mutex_unlock(&full_mutex);
-                jsonData = dataToJson(args->NodeId.identifier.numeric,valueArr);
+
                 pthread_mutex_lock(&full_mutex);
+                jsonData = dataToJson(args->NodeId.identifier.numeric,valueArr);
                 c.insert("test.collections",jsonData);
                 pthread_mutex_unlock(&full_mutex);
 

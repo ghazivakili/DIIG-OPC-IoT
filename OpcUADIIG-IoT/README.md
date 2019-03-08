@@ -15,6 +15,8 @@ This is a server for new IIoT platform which is based on IEC62541 standards. Thi
 - Libraries
   - [open62541  version >= 0.2](https://open62541.org/)
   - [Mongocxx lib](http://mongocxx.org/mongocxx-v3/installation/)
+      Run this for installing ``sudo scons --disable-warnings-as-errors --prefix=/usr/ install``
+
   - [Librdkafka](https://github.com/edenhill/librdkafka)
   - [DataStax C/C++ Driver](https://github.com/datastax/cpp-driver)
 

@@ -1,3 +1,3 @@
-/home/photonextdev/workspace/DIIG/DIIG-Gateway/build/CMakeFiles/edit_cache.dir
-/home/photonextdev/workspace/DIIG/DIIG-Gateway/build/CMakeFiles/rebuild_cache.dir
-/home/photonextdev/workspace/DIIG/DIIG-Gateway/build/CMakeFiles/DIIGatway.dir
+/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/build/CMakeFiles/edit_cache.dir
+/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/build/CMakeFiles/rebuild_cache.dir
+/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/build/CMakeFiles/DIIGatway.dir

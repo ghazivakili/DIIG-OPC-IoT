@@ -176,7 +176,7 @@ void * connectToClient(void * arguments) {
 /*    pthread_mutex_lock(&full_mutex);
     Index = DB7[*id];
     pthread_mutex_unlock(&full_mutex);*/
-    uint32_t jj=1;
+    uint32_t jj=0,j;
     int ii=0 ,status_1=0,status_2=0,status_3=0,status_4=0;
     pthread_mutex_lock(&full_mutex);
     uint32_t nxl=nx;
@@ -215,6 +215,7 @@ void * connectToClient(void * arguments) {
     int * id;
     id= (int  *) &args->thread_id;
     int Index;
+    int db51,db52,db53,db54;
     int totalloop;
 
 
@@ -278,36 +279,46 @@ connection:
         readIndex=Index*8;
 
         switch (*id) {
-            case 1:  //  Relay the data DB  from DB1[Index]  to DB1[Index+8]
-                //printf("Relay DB1[%d:%d]:%x \n",*id,Index,DB1[Index*8]);
-
+            case 1:
                 fullIndex=(*id-1)*32+Index;
+                /*Server->LockArea(5,5);
+                db51=DB5[fullIndex];
+                Server->UnlockArea(5,5);*/
                 if(DB5[fullIndex]==1){
-                    Server->LockArea(5,5);
-                    UA_Int32 dataG[nx] = {2, jj, DB1[readIndex], DB1[readIndex+1], DB1[readIndex+2], DB1[readIndex+3], DB1[readIndex+4], DB1[readIndex+5], DB1[readIndex+6], DB1[readIndex+7]};
 
+                    dataG[0]=2;
+                    dataG[1]=jj;
+                    for (int i = 2; i < 10; i++) {
+                        j=(i-2);
+                        dataG[i]=DB1[readIndex+j];
+                      }
+                    Server->LockArea(5,5);
                     DB5[fullIndex]=0;
                     Server->UnlockArea(5,5);
-                    //printf("step2~! %d,%d,%d,%d,%d,%d \n",  jj,status_1,status_2,status_3,status_4,args->NodId);
                     status_1=1;
-                    //usleep(4000);
                     fair1++;
                     if(fair1>=totalloop)
                         DB8[*id]=0x01;
                 }
                 //break;
             case 2:
-                //printf("Relay DB2[%d:%d]:%x \n",*id,Index,DB2[Index*8]);
-
                 fullIndex=(*id-1)*32+Index;
+                /*Server->LockArea(5,5);
+                db52=DB5[fullIndex];
+                Server->UnlockArea(5,5);*/
                 if(DB5[fullIndex]==1){
 
+                    dataG[0]=2;
+                    dataG[1]=jj;
+                    for (int i = 2; i < 10; i++) {
+                     j=(i-2);
+                    dataG[i]=DB2[readIndex+j];
+                    }
                     Server->LockArea(5,5);
-                    UA_Int32 dataG[nx]={2, jj, DB2[readIndex], DB2[readIndex+1], DB2[readIndex+2], DB2[readIndex+3], DB2[readIndex+4], DB2[readIndex+5], DB2[readIndex+6], DB2[readIndex+7]};
                     DB5[fullIndex]=0;
                     Server->UnlockArea(5,5);
                     status_2=1;
-                    //usleep(4000);
+
                     fair2++;
                     if(fair2>=totalloop)
                         DB8[*id]=0x01;
@@ -315,41 +326,56 @@ connection:
                 //break;
             case 3:
                 fullIndex=(*id-1)*32+Index;
+              /*  Server->LockArea(5,5);
+                db53=DB5[fullIndex];
+                Server->UnlockArea(5,5);*/
                 if(DB5[fullIndex]==1){
-                    //printf("Relay DB3[%d]:%x \n",*id,DB3[Index]);
 
+
+                    dataG[0]=2;
+                    dataG[1]=jj;
+                    for (int i = 2; i < 10; i++) {
+                      j=(i-2);
+                        dataG[i]=DB3[readIndex+j];
+                      }
                     Server->LockArea(5,5);
-                    UA_Int32 dataG[nx]={2, jj, DB3[readIndex], DB3[readIndex+1], DB3[readIndex+2], DB3[readIndex+3], DB3[readIndex+4], DB3[readIndex+5], DB2[readIndex+6], DB2[readIndex+7]};
                     DB5[fullIndex]=0;
                     Server->UnlockArea(5,5);
                     status_3=1;
-                    //usleep(4000);
                     fair3++;
                     if(fair3>=totalloop)
                         DB8[*id]=0x01;
                 }
                 //break;
             case 4:
-                //printf("Relay DB4[%d]:%x \n",*id,DB4[Index]);
                 fullIndex=(*id-1)*32+Index;
+                /*Server->LockArea(5,5);
+                db54=DB5[fullIndex];
+                Server->UnlockArea(5,5);*/
                 if(DB5[fullIndex]==1){
 
+
+
+                    dataG[0]=2;
+                    dataG[1]=jj;
+                    for (int i = 2; i < 10; i++) {
+                        j=(i-2);
+                        dataG[i]=DB4[readIndex+j];
+                      }
+
                     Server->LockArea(5,5);
-                    UA_Int32 dataG[nx]={2, jj, DB4[readIndex], DB4[readIndex+1], DB4[readIndex+2], DB4[readIndex+3], DB4[readIndex+4], DB4[readIndex+5], DB2[readIndex+6], DB2[readIndex+7]};
                     DB5[fullIndex]=0;
                     Server->UnlockArea(5,5);
                     status_4=1;
-                    //usleep(4000);
                     fair4++;
                     if(fair4>=totalloop)
                         DB8[*id]=0x01;
                 }
                 //break;
         }
-        /****END shop floor*****/
 
-
-        startTimeforEach = std::clock();
+        retry:
+        //startTimeforEach = std::clock();
 
         if(status_1==1 || status_2==1 || status_3==1 || status_4==1) {
 
@@ -361,28 +387,20 @@ connection:
 
 
             if (check == UA_STATUSCODE_GOOD && value2.data != NULL) {
-                //    Point *p = (Point *)value.data;
-                // if(jj== checkp) {
                 UA_Int32 *valueArr = (UA_Int32 *) value2.data;
 
-                //int checkp=(valueArr[1]+1);
-                //pthread_mutex_lock(&full_mutex);
 
                 checkpoint = valueArr[0];
 
-                //pthread_mutex_unlock(&full_mutex);
                 if (checkpoint == 1) {
 
 
-                    //writePosition:
                     UA_Variant_setArrayCopy(&v3, dataG, nx, &UA_TYPES[UA_TYPES_INT32]);
 
                     pthread_mutex_lock(&full_mutex);
                     UA_StatusCode status = UA_Client_writeValueAttribute(client, nodeId, &v3);
-                    //usleep(2000);
 
                     pthread_mutex_unlock(&full_mutex);
-                    //printf("step3~! %d,%d,%d,%d,%d \n", status_1,status_2,status_3,status_4,args->NodId);
                     if (status == UA_STATUSCODE_GOOD) {
 
                         jj++;
@@ -413,7 +431,8 @@ connection:
                         pthread_mutex_unlock(&full_mutex);
                         exit(0);
                     }
-                }
+                }else
+                goto retry;
 
 
             }
@@ -436,11 +455,11 @@ connection:
     /* Clean up */
     pthread_mutex_lock(&full_mutex);
     totalTime[args->thread_id]=clock()-startTime[args->thread_id];
-    std::cout<< "through put :, " << jj /(totalTime[args->thread_id]/CLOCKS_PER_SEC)
-             << ",per sec  time  :," << totalTime[args->thread_id]/CLOCKS_PER_SEC
-             << ",min latency  :," << lastminforeach/CLOCKS_PER_SEC
+    //std::cout<< "through put :, " << jj /(totalTime[args->thread_id]/CLOCKS_PER_SEC)
+    //         << ",per sec  time  :," << totalTime[args->thread_id]/CLOCKS_PER_SEC
+/*    std::cout<< ",min latency  :," << lastminforeach/CLOCKS_PER_SEC
              << ",max latency  :," << lastmaxforeach/CLOCKS_PER_SEC
-             << ",opration," << jj<<std::endl;
+             << ",opration," << jj<<std::endl;*/
     UA_Variant_deleteMembers(&value);
     UA_Client_delete(client); /* Disconnects the client internally */
     pthread_mutex_unlock(&full_mutex);

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/photonextdev/workspace/DIIG/DIIG-Gateway/src/main-Gateway.cpp
+/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/main-Gateway.cpp
 signal.h
 -
 stdio.h
@@ -18,15 +18,15 @@ random
 ctime
 -
 open62541.h
-/home/photonextdev/workspace/DIIG/DIIG-Gateway/src/open62541.h
+/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.h
 iostream
 -
 snap7.h
-/home/photonextdev/workspace/DIIG/DIIG-Gateway/src/snap7.h
+/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/snap7.h
 open62541.h
-/home/photonextdev/workspace/DIIG/DIIG-Gateway/src/open62541.h
+/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.h
 
-/home/photonextdev/workspace/DIIG/DIIG-Gateway/src/open62541.h
+/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.h
 stddef.h
 -
 stdint.h
@@ -62,11 +62,11 @@ wchar.h
 stdarg.h
 -
 
-/home/photonextdev/workspace/DIIG/DIIG-Gateway/src/snap7.cpp
+/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/snap7.cpp
 snap7.h
-/home/photonextdev/workspace/DIIG/DIIG-Gateway/src/snap7.h
+/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/snap7.h
 
-/home/photonextdev/workspace/DIIG/DIIG-Gateway/src/snap7.h
+/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/snap7.h
 unistd.h
 -
 string
