@@ -136,6 +136,7 @@ void * Readdata(void *arguments) {
     UA_Variant_init(&value);
     //value.dataType = UA_TYPES[UA_TYPES_INT32].typeId;
     //value.valueRank = 1; /* array with one dimension */
+
     UA_UInt32 arrayDims[1] = {nx};//,ny};//2
     value.arrayDimensions = arrayDims;
     value.arrayDimensionsSize = 2;
@@ -148,7 +149,7 @@ void * Readdata(void *arguments) {
     UA_Variant_init(&v3);
 
     UA_Int32 *valueArr;
-    UA_Int32 *checkValue;
+    int *checkValue;
 
     //cassandra_setup();
     /*start cassandra setting*/
@@ -212,12 +213,12 @@ void * Readdata(void *arguments) {
         pthread_mutex_lock(&full_mutex);
         UA_StatusCode check = UA_Server_readValue(server, args->NodeId, &value);
         //printf("read is GOOD\n");
-        checkValue= &value.data;
-        
+        checkValue= value.data;
+
         pthread_mutex_unlock(&full_mutex);
 
 
-        if (check == UA_STATUSCODE_GOOD && checkValues!=NULL) {
+        if (check == UA_STATUSCODE_GOOD && checkValue!=NULL) {
             pthread_mutex_lock(&full_mutex);
 
             valueArr = (UA_Int32 *) value.data;
