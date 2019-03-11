@@ -1,0 +1,12 @@
+lun 11 mar 2019, 14.28.13, UTC,
+Th.put client ,1,2972.32,2,3000.68,total Th.put :,5943.61
+Th.put client ,1,3062.58,2,3088.16,total Th.put :,6124.42
+Th.put client ,1,2983.25,2,2963.46,total Th.put :,5925.91
+Th.put client ,1,2839.28,2,2827.59,total Th.put :,5654.15
+Th.put client ,1,3099.65,2,3102.59,total Th.put :,6198.53
+Th.put client ,1,4093.06,2,4085.95,total Th.put :,8170.34
+Th.put client ,1,3164.77,2,3129.15,total Th.put :,6256.96
+Th.put client ,1,3150.93,2,3238.63,total Th.put :,6301.05
+Th.put client ,1,2943.97,2,2951.45,total Th.put :,5887.25
+Th.put client ,1,2724.89,2,2730.58,total Th.put :,5449.18
+Th.put client ,1,2959.39,2,3022.39,total Th.put :,5917.93

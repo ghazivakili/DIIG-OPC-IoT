@@ -1,0 +1,11 @@
+lun 11 mar 2019, 14.04.50, UTC,
+Th.put client ,1,9886.18,total Th.put :,9883.08
+Th.put client ,1,9963.45,total Th.put :,9960.34
+Th.put client ,1,9918.58,total Th.put :,9915.22
+Th.put client ,1,9431.8,total Th.put :,9429.29
+Th.put client ,1,8206.47,total Th.put :,8204.45
+Th.put client ,1,9145.89,total Th.put :,9142.78
+Th.put client ,1,8878.21,total Th.put :,8875.31
+Th.put client ,1,10120.8,total Th.put :,10117.3
+Th.put client ,1,10159.5,total Th.put :,10156.4
+Th.put client ,1,9352.02,total Th.put :,9348.77

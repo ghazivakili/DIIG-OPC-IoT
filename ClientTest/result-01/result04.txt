@@ -1,0 +1,11 @@
+sab  9 mar 2019, 12.25.16, UTC,Th.put client ,1,817.898,2,821.875,3,824.928,4,816.257,total Th.put :,3264.88
+sab  9 mar 2019, 12.40.40, UTC,Th.put client ,1,721.111,2,717.081,3,716.655,4,716.85,total Th.put :,2866.39
+sab  9 mar 2019, 12.44.24, UTC,Th.put client ,1,899.966,2,876.701,3,869.281,4,870.941,total Th.put :,3476.81
+sab  9 mar 2019, 12.48.39, UTC,Th.put client ,1,845.873,2,871.146,3,842.619,4,846.697,total Th.put :,3370.26
+sab  9 mar 2019, 12.58.37, UTC,Th.put client ,1,785.196,2,797.3,3,784.569,4,786.892,total Th.put :,3138.03
+sab  9 mar 2019, 13.01.55, UTC,Th.put client ,1,875.523,2,861.884,3,857.522,4,859.224,total Th.put :,3429.88
+sab  9 mar 2019, 13.09.34, UTC,Th.put client ,1,1041.01,2,1039.63,3,1041.2,4,1042.03,total Th.put :,4158.2
+sab  9 mar 2019, 13.15.48, UTC,Th.put client ,1,849.691,2,863.351,3,852.53,4,850.859,total Th.put :,3398.39
+sab  9 mar 2019, 13.20.06, UTC,Th.put client ,1,849.961,2,850.761,3,862.29,4,853.136,total Th.put :,3399.68
+sab  9 mar 2019, 13.23.20, UTC,Th.put client ,1,826.165,2,840.105,3,829.267,4,830.01,total Th.put :,3304.36
+sab  9 mar 2019, 13.30.16, UTC,Th.put client ,1,852.108,2,841.861,3,848.88,4,839.708,total Th.put :,3358.62

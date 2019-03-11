@@ -1,0 +1,10 @@
+sab  9 mar 2019, 10.59.12, UTC,Th.put client ,1,2887.83,2,2892.09,total Th.put :,6774.97
+sab  9 mar 2019, 11.00.32, UTC,Th.put client ,1,2835.26,2,2837.88,total Th.put :,6669.74
+sab  9 mar 2019, 11.01.47, UTC,Th.put client ,1,2960.41,2,2969.94,total Th.put :,6920.17
+sab  9 mar 2019, 11.07.06, UTC,Th.put client ,1,3302.29,2,3285.01,total Th.put :,6569.21
+sab  9 mar 2019, 11.10.07, UTC,Th.put client ,1,3286,2,3239.24,total Th.put :,6477.5
+sab  9 mar 2019, 11.17.36, UTC,Th.put client ,1,3239.09,2,3175.15,total Th.put :,6349.4
+sab  9 mar 2019, 11.48.42, UTC,Th.put client ,1,3229.33,2,3205.62,total Th.put :,6410.3
+sab  9 mar 2019, 11.50.31, UTC,Th.put client ,1,3672.8,2,3653.04,total Th.put :,7305
+sab  9 mar 2019, 11.54.51, UTC,Th.put client ,1,3251.27,2,3200.95,total Th.put :,6400.23
+sab  9 mar 2019, 11.56.23, UTC,Th.put client ,1,3212.61,2,3204.36,total Th.put :,6407.57

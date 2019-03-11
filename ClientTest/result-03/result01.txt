@@ -1,0 +1,12 @@
+Th.put client ,1,8949.61,total Th.put :,8946.9
+Th.put client ,1,7214.91,total Th.put :,7213.15
+Th.put client ,1,9874.75,total Th.put :,9871.79
+Th.put client ,1,9206.09,total Th.put :,9201.05
+Th.put client ,1,9728.59,total Th.put :,9725.19
+Th.put client ,1,9476.59,total Th.put :,9473.64
+Th.put client ,1,8911.07,total Th.put :,8908.34
+Th.put client ,1,9747.67,total Th.put :,9745.2
+Th.put client ,1,10061.4,total Th.put :,10058
+Th.put client ,1,9110.96,total Th.put :,9108.76
+Th.put client ,1,10209.7,total Th.put :,10206.3
+Th.put client ,1,9730.04,total Th.put :,9726.81
