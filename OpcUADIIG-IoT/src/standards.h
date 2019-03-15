@@ -130,7 +130,8 @@ void * database(void *arguments){
     std::stringstream Intstring;
     int jj = 0;
 
-    std::cout << "database thread started" << args->db_id <<std::endl;
+    std::cout << "database driver has been started : " << dbname[args->db_id] <<std::endl;
+
     //cassandra_setup();
     /*start cassandra setting*/
     CassCluster* cluster = NULL;
@@ -175,7 +176,7 @@ void * database(void *arguments){
         while (!qDataPull.empty()) {
 
 
-            std::cout << "database step 2" << args->db_id << std::endl;
+            //std::cout << "database step 2" << args->db_id << std::endl;
 
             pthread_mutex_lock(&full_mutex);
             localdata = qDataPull.front();
@@ -481,7 +482,7 @@ void * Readdata(void *arguments) {
 
         }
         //pthread_mutex_unlock(&full_mutex);
-        usleep(50);
+        //usleep(50);
         nanosleep(&tim, (struct timespec *)NULL);
 
 
