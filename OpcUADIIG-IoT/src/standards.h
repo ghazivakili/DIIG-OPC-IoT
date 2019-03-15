@@ -125,6 +125,7 @@ UA_Boolean running = true;
 void * database(void *arguments){
     struct arg_struct *args = (struct arg_struct *) arguments;
     dataPull localdata;
+    std::stringstream Intstring;
     int jj = 0;
     //cassandra_setup();
     /*start cassandra setting*/
@@ -372,10 +373,11 @@ void * Readdata(void *arguments) {
 
                 p.data[0]=args->NodeId.identifier.numeric;
                 for (int i = 2; i <= 9; i++){
-                    p.data[(i-1)] valueArr[i];
+                    p.data[(i-1)] = valueArr[i];
                 }
                 pthread_mutex_lock(&full_mutex);
                 qDataPull.push(p);
+                
                 pthread_mutex_unlock(&full_mutex);
 
 //                if(args->db_id == 1){
