@@ -176,7 +176,7 @@ void * database(void *arguments){
     }
     while(true) {
         pthread_mutex_lock(&full_mutex);
-        check=qDataPull.empty()
+        check=qDataPull.empty();
         pthread_mutex_unlock(&full_mutex);
         while (!check) {
 
