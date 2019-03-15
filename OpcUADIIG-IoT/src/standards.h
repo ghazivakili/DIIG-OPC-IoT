@@ -199,7 +199,7 @@ void * Readdata(void *arguments) {
     pthread_mutex_lock(&full_mutex);
     int nxl = nx;
     pthread_mutex_unlock(&full_mutex);
-    UA_Int32 freeData[nxl] = { 1, 0, 0, 0, 0, 0, 0, 0  ,0,0 };
+    UA_Int32 freeData[nxl] = { 1, 0, 0, 0, 0, 0, 0, 0 ,0,0 };
     pthread_mutex_lock(&full_mutex);
 
     UA_Variant_setArrayCopy(&v3, freeData, nxl, &UA_TYPES[UA_TYPES_INT32]);

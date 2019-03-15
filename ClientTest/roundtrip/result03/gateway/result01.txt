@@ -1,0 +1,11 @@
+1.
+,min latency  :,0.000108,max latency  :,0.023322,total opration,500
+2.
+,min latency  :,0.000163,max latency  :,0.044266,total opration,500
+3.
+,min latency  :,0.000119,max latency  :,0.027466,total opration,500
+4.
+,min latency  :,0.00016,max latency  :,0.025293,total opration,500
+5.
+,min latency  :,0.000119,max latency  :,0.04321,total opration,500
+

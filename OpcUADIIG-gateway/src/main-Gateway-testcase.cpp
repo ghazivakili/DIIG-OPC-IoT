@@ -283,12 +283,11 @@ connection:
             case 1:  //  Relay the data DB  from DB1[Index]  to DB1[Index+8]
 
                 fullIndex=(*id-1)*32+Index;
-                Server->LockArea(5,5);
+                /*Server->LockArea(5,5);
                 db51=DB5[fullIndex];
-                Server->UnlockArea(5,5);
-                if(db51==1){
+                Server->UnlockArea(5,5);*/
+                if(DB5[fullIndex]==1){
                     Server->LockArea(5,5);
-                    //UA_Int32 dataG[nx] = {2, jj, DB1[readIndex], DB1[readIndex+1], DB1[readIndex+2], DB1[readIndex+3], DB1[readIndex+4], DB1[readIndex+5], DB1[readIndex+6], DB1[readIndex+7]};
                         dataG[0]=2;
                         dataG[1]=jj;
                     for (int i = 2; i < 10; i++) {
@@ -297,7 +296,6 @@ connection:
                       }
                     DB5[fullIndex]=0;
                     Server->UnlockArea(5,5);
-                    //printf("step2~! %d,%d,%d,%d,%d,%d \n",  jj,status_1,status_2,status_3,status_4,args->NodId);
                     status_1=1;
                     //usleep(4000);
                     fair1++;
@@ -306,16 +304,14 @@ connection:
                 }
                 //break;
             case 2:
-                //printf("Relay DB2[%d:%d]:%x \n",*id,Index,DB2[Index*8]);
 
                 fullIndex=(*id-1)*32+Index;
-                Server->LockArea(5,5);
+                /*Server->LockArea(5,5);
                 db52=DB5[fullIndex];
-                Server->UnlockArea(5,5);
-                if(db52==1){
+                Server->UnlockArea(5,5);*/
+                if(DB5[fullIndex]==1){
 
                     Server->LockArea(5,5);
-                    //UA_Int32 dataG[nx]={2, jj, DB2[readIndex], DB2[readIndex+1], DB2[readIndex+2], DB2[readIndex+3], DB2[readIndex+4], DB2[readIndex+5], DB2[readIndex+6], DB2[readIndex+7]};
                         dataG[0]=2;
                         dataG[1]=jj;
                     for (int i = 2; i < 10; i++) {
@@ -333,14 +329,12 @@ connection:
                 //break;
             case 3:
                 fullIndex=(*id-1)*32+Index;
-                Server->LockArea(5,5);
+                /*Server->LockArea(5,5);
                 db53=DB5[fullIndex];
-                Server->UnlockArea(5,5);
-                if(db53==1){
-                    //printf("Relay DB3[%d]:%x \n",*id,DB3[Index]);
+                Server->UnlockArea(5,5);*/
+                if(DB5[fullIndex]==1){
 
                     Server->LockArea(5,5);
-                    //UA_Int32 dataG[nx]={2, jj, DB3[readIndex], DB3[readIndex+1], DB3[readIndex+2], DB3[readIndex+3], DB3[readIndex+4], DB3[readIndex+5], DB2[readIndex+6], DB2[readIndex+7]};
                     dataG[0]=2;
                     dataG[1]=jj;
                     for (int i = 2; i < 10; i++) {
@@ -359,14 +353,12 @@ connection:
             case 4:
                 //printf("Relay DB4[%d]:%x \n",*id,DB4[Index]);
                 fullIndex=(*id-1)*32+Index;
-                Server->LockArea(5,5);
+                /*Server->LockArea(5,5);
                 db54=DB5[fullIndex];
-                Server->UnlockArea(5,5);
-                if(db54==1){
+                Server->UnlockArea(5,5);*/
+                if(DB5[fullIndex]==1){
 
                     Server->LockArea(5,5);
-                    //UA_Int32 dataG[nx]={2, jj, DB4[readIndex], DB4[readIndex+1], DB4[readIndex+2], DB4[readIndex+3], DB4[readIndex+4], DB4[readIndex+5], DB2[readIndex+6], DB2[readIndex+7]};
-                    //UA_Int32 dataG[nx]={2, jj, 55, 32, DB4[readIndex+2], DB4[readIndex+3], DB4[readIndex+4], DB4[readIndex+5], DB2[readIndex+6], DB2[readIndex+7]};
                     dataG[0]=2;
                     dataG[1]=jj;
                     for (int i = 2; i < 10; i++) {
@@ -375,7 +367,6 @@ connection:
                       }
                     DB5[fullIndex]=0;
                     Server->UnlockArea(5,5);
-                    //UA_Int32 dataG[nx]={2, jj, 55, 32, DB4[readIndex+2], DB4[readIndex+3], DB4[readIndex+4], DB4[readIndex+5], DB2[readIndex+6], DB2[readIndex+7]};
 
                     status_4=1;
                     //usleep(4000);
@@ -427,7 +418,6 @@ connection:
                     //usleep(2000);
 
                     pthread_mutex_unlock(&full_mutex);
-                    //printf("step3~! %d,%d,%d,%d,%d \n", status_1,status_2,status_3,status_4,args->NodId);
                     if (status == UA_STATUSCODE_GOOD) {
 
                         jj++;
@@ -485,7 +475,7 @@ connection:
 //    pthread_mutex_unlock(&full_mutex);
     /* Clean up */
     pthread_mutex_lock(&full_mutex);
-    std::cout << "starttime" << startTimeForloop << "stop time" << std::clock() << std::endl;
+    //std::cout << "starttime" << startTimeForloop << "stop time" << std::clock() << std::endl;
     totalTime[args->thread_id]=(std::clock()-startTime[args->thread_id]);
     //std::cout << "through put :, " << jj /(totalTime[args->thread_id]/CLOCKS_PER_SEC)
              //<< ",per sec  time  :," << (totalTime[args->thread_id]/CLOCKS_PER_SEC)
@@ -595,8 +585,7 @@ int main(int argc, char *argv[]) {
     }*/
         for (int counterJ = 1; counterJ <= atoi(argv[3]); counterJ++)// Creating free flag and Relay thread workers
         {
-            //  thread_id[counterJ]=counterJ;
-            //pthread_join(threads[i], &status);
+          
             pthread_join(ftid[counterJ], &status);
 
             // pthread_create(&(ftid[counter]), NULL, &clients, (void *) &thread_id[counter] );

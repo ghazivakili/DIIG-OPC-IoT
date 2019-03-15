@@ -1,0 +1,5 @@
+total RoundTrip,0.3215,Th.put client1 ,3147.15,Th.put client2 ,3074.54,total Th.put, 6191.95,T Roundtrip task 1 ,0.158874,T Roundtrip task 2 ,0.162626,
+total RoundTrip,0.302976,Th.put client1 ,3261.62,Th.put client2 ,3340.5,total Th.put, 6570.04,T Roundtrip task 1 ,0.153298,T Roundtrip task 2 ,0.149678,
+total RoundTrip,0.500049,Th.put client1 ,1983.51,Th.put client2 ,2016.36,total Th.put, 3984.16,T Roundtrip task 1 ,0.252078,T Roundtrip task 2 ,0.247971,
+total RoundTrip,0.31295,Th.put client1 ,3142.38,Th.put client2 ,3250.24,total Th.put, 6319.59,T Roundtrip task 1 ,0.159115,T Roundtrip task 2 ,0.153835,
+total RoundTrip,0.319382,Th.put client1 ,3119.27,Th.put client2 ,3142.91,total Th.put, 6279.16,T Roundtrip task 1 ,0.160294,T Roundtrip task 2 ,0.159088,

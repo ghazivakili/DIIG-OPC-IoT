@@ -1,0 +1,16 @@
+1.
+,min latency  :,7.1e-05,max latency  :,0.064057,total opration,500
+,min latency  :,0.000127,max latency  :,0.051133,total opration,500
+2.
+,min latency  :,0.000113,max latency  :,0.040277,total opration,500
+,min latency  :,0.000129,max latency  :,0.027589,total opration,500
+
+3.
+,min latency  :,0.000122,max latency  :,0.061514,total opration,500
+,min latency  :,0.000271,max latency  :,0.079502,total opration,500
+4.
+,min latency  :,8.2e-05,max latency  :,0.029534,total opration,500
+,min latency  :,7.8e-05,max latency  :,0.045597,total opration,500
+5. 
+,min latency  :,0.000103,max latency  :,0.027269,total opration,500
+,min latency  :,6.2e-05,max latency  :,0.062334,total opration,500

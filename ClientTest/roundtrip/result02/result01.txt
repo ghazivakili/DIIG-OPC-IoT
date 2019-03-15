@@ -1,0 +1,5 @@
+total RoundTrip,0.064168,Th.put client1 ,7792.05,total Th.put, 7924.94,T Roundtrip task 1 ,0.064168,
+total RoundTrip,0.057603,Th.put client1 ,8680.1,total Th.put, 8841.42,T Roundtrip task 1 ,0.057603,
+total RoundTrip,0.057573,Th.put client1 ,8684.63,total Th.put, 8852.69,T Roundtrip task 1 ,0.057573,
+total RoundTrip,0.058084,Th.put client1 ,8608.22,total Th.put, 8762.25,T Roundtrip task 1 ,0.058084,
+total RoundTrip,0.06344,Th.put client1 ,7881.46,total Th.put, 8007.3,T Roundtrip task 1 ,0.06344,

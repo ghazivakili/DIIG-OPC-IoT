@@ -1,0 +1,26 @@
+/opt/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-IoT
+-- The C compiler identification is GNU 7.3.0
+-- The CXX compiler identification is GNU 7.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+CASSANDRA_LIBRARY
+    linked by target "OpcUADIIGIoTServer" in directory /home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-IoT
+MONGODB_LIBRARY
+    linked by target "OpcUADIIGIoTServer" in directory /home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-IoT
+RDKAFKA_LIBRARY
+    linked by target "OpcUADIIGIoTServer" in directory /home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-IoT
+
+-- Configuring incomplete, errors occurred!
+See also "/home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-IoT/cmake-build-debug/CMakeFiles/CMakeOutput.log".

@@ -28,7 +28,7 @@ static void stopHandler(int sign) {
  *
  */
 
-#define NTHREAD 10
+#define NTHREAD 100
 pthread_t ftid[NTHREAD];
 pthread_t rtid[NTHREAD];
 int thread_id[NTHREAD];

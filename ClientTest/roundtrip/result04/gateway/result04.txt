@@ -1,0 +1,30 @@
+1.
+,min latency  :,6.6e-05,max latency  :,0.014067,total opration,500
+,min latency  :,6.6e-05,max latency  :,0.016716,total opration,500
+,min latency  :,6.6e-05,max latency  :,0.015951,total opration,500
+,min latency  :,6.5e-05,max latency  :,0.020499,total opration,500
+
+2.
+,min latency  :,6.8e-05,max latency  :,0.02269,total opration,500
+,min latency  :,8.3e-05,max latency  :,0.025333,total opration,500
+,min latency  :,6.1e-05,max latency  :,0.021992,total opration,500
+,min latency  :,6.8e-05,max latency  :,0.012017,total opration,500
+
+3.
+,min latency  :,6.2e-05,max latency  :,0.044539,total opration,500
+,min latency  :,6.4e-05,max latency  :,0.019549,total opration,500
+,min latency  :,7.2e-05,max latency  :,0.02941,total opration,500
+,min latency  :,6.9e-05,max latency  :,0.027164,total opration,500
+
+4.
+,min latency  :,8.6e-05,max latency  :,0.033784,total opration,500
+,min latency  :,7e-05,max latency  :,0.017483,total opration,500
+,min latency  :,6.9e-05,max latency  :,0.028908,total opration,500
+,min latency  :,6.9e-05,max latency  :,0.018663,total opration,500
+
+5.
+,min latency  :,6.4e-05,max latency  :,0.03993,total opration,500
+,min latency  :,6.8e-05,max latency  :,0.026549,total opration,500
+,min latency  :,6.3e-05,max latency  :,0.029624,total opration,500
+,min latency  :,6.2e-05,max latency  :,0.025948,total opration,500
+

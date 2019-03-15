@@ -526,11 +526,11 @@ void * clients( void * arguments) {
 		  ClientInt= new TS7Client();
 
 	  double duration;
-      std::cout << "PLC " << plcCode << "started" << std::endl;
-      std::cout << "total op : " << threshold_internal  << std::endl;
+      //std::cout << "PLC " << plcCode << "started" << std::endl;
+      //std::cout << "total op : " << threshold_internal  << std::endl;
 
       int res = ClientInt->ConnectTo(Address,Rack,Slot);
-      std::cout <<  res << std::endl;
+      //std::cout <<  res << std::endl;
       /*   if (Check(res,"UNIT Connection")) {
              printf("  Connected to   : %s (Rack=%d, Slot=%d)\n",Address,Rack,Slot);
              printf("  PDU Requested  : %d bytes\n",ClientInt->PDURequested());
@@ -586,15 +586,15 @@ void * clients( void * arguments) {
 
 
 				if(dataFreeDb8==1){
-					          std::cout << dataFreeDb8 << std::endl;
+					          //std::cout << dataFreeDb8 << std::endl;
 	                  duration = ( std::clock() - startClockLatancy ) / (double) CLOCKS_PER_SEC;
 	                  latancy[plcCode]=duration;
-	                  std::cout << "time duration is :" << duration << std::endl;
+	                  //std::cout << "time duration is :" << duration << std::endl;
 	                  break;
 	              }
 
 
-				 /* if(throughput_Counter_internal>=threshold_internal){
+	                /* if(throughput_Counter_internal>=threshold_internal){
 	                  duration = ( std::clock() - startClock ) / (double) CLOCKS_PER_SEC;
 	                  thr_put[plcCode]=duration;
 	                  std::cout << "time duration is :" << duration << std::endl;
@@ -640,7 +640,7 @@ int main(int argc, char* argv[])
         Slot=2;
         threshold_counter=atoi(argv[3]);//1000;//atoi(argv[5]);
         threadNumber=atoi(argv[2]);
-        std::cout << "duration is :" << threshold_counter << std::endl;
+        //std::cout << "duration is :" << threshold_counter << std::endl;
     }else{
     	Usage();
     	 return 1;
@@ -657,7 +657,7 @@ int main(int argc, char* argv[])
                th_args[counter].thread_id = counter;
                thread_id[counter]=counter;
                int ret=pthread_create(&(ftid[counter]), NULL, &clients, (void *) &th_args[counter] );
-               std::cout << ret << std::endl;
+               //std::cout << ret << std::endl;
            }
     for( int counterJ=1; counterJ<=threadNumber; counterJ++)// Creating free flag and Relay thread workers
                {
@@ -669,21 +669,27 @@ int main(int argc, char* argv[])
                }
     timeTh = ( std::clock() - startClock ) / (double) CLOCKS_PER_SEC;
     for (int counterk=1;counterk <= threadNumber; counterk++){
-    	sumTime=thr_put[counterk]+sumTime;
+    	sumTime=latancy[counterk]+sumTime;
 
     }
   //  Summary();
-    std::cout << "total Th.put:"<< (threadNumber*threshold_counter)/sumTime << std::endl; //msec
+  //  std::cout << "total Th.put ,"<< (threadNumber*threshold_counter)/sumTime <<","; //msec
+    std::cout << "total RoundTrip,"<< sumTime <<","; //msec
     for (int counterk=1;counterk <= threadNumber; counterk++){
-    	 std::cout << "Th.put client 1:"<< (threshold_counter)/thr_put[counterk] << std::endl; //msec
+    	 std::cout << "Th.put client" << counterk << " ,"<< (threshold_counter)/latancy[counterk] <<","; //msec
     }
-    //std::cout << "T is s:"<< (threadNumber)/sumTime << std::endl; //sec
-    std::cout << "total Th.put "<< (threadNumber*threshold_counter)/timeTh << std::endl; // msec
+        //std::cout << "T is s:"<< (threadNumber)/sumTime << std::endl; //sec
+    std::cout << "total Th.put, "<< (threadNumber*threshold_counter)/timeTh <<","; // msec
     //std::cout << "T 2 is s:"<< (threadNumber)/timeTh << std::endl; // sec
-    std::cout << "T latancy task 1 is :"<< latancy[1] << std::endl;
-    std::cout << "T latancy task 2 is :"<< latancy[2] << std::endl;
-    std::cout << "T latancy task 3 is :"<< latancy[3]  << std::endl;
-    std::cout << "T latancy task 4 is :"<< latancy[4] << std::endl;
 
+    for (int counterk=1;counterk <= threadNumber; counterk++){
+       std::cout << "T Roundtrip task " << counterk << " ,"<< latancy[counterk] <<","; //msec
+    }
+    std::cout  << std::endl;
+
+    /*std::cout << "T Roundtrip task 1 is :"<< latancy[1] << std::endl;
+    std::cout << "T Roundtrip task 2 is :"<< latancy[2] << std::endl;
+    std::cout << "T Roundtrip task 3 is :"<< latancy[3]  << std::endl;
+    std::cout << "T Roundtrip task 4 is :"<< latancy[4] << std::endl;*/
     pthread_exit(NULL);
 }
