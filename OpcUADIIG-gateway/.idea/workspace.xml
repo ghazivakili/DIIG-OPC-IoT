@@ -18,6 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d78ae5e-c56d-4b65-a1ac-1aaf312a93e5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG-IoT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG-IoT/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OpcUADIIG-IoT/src/standards.h" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG-IoT/src/standards.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
