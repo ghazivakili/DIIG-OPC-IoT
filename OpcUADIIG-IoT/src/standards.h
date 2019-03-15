@@ -122,8 +122,8 @@ writeVariable(UA_Server *server) {
 UA_Boolean running = true;
 
 
-void * database(){
-    //struct arg_struct *args = (struct arg_struct *) arguments;
+void * database(void *arguments){
+    struct arg_struct *args = (struct arg_struct *) arguments;
     dataPull localdata;
     std::stringstream Intstring;
     int jj = 0;

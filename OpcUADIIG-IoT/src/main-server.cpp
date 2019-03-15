@@ -87,7 +87,7 @@ int main(int argc, char *argv[]) {
         }
 
 
-        pthread_create(&(ftid[1999]), NULL, &database, NULL);
+        pthread_create(&(ftid[1999]), NULL, &database, (void *) &args1[i]);
 
 
         UA_Server_run(server, &running);

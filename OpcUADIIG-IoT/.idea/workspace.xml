@@ -40,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
-              <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+              <caret line="89" column="73" selection-start-line="89" selection-start-column="73" selection-end-line="89" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -48,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/standards.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="124" column="15" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="15" />
+            <state relative-caret-position="155">
+              <caret line="125" column="4" lean-forward="true" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -308,12 +308,12 @@
       <workItem from="1547483047032" duration="3372000" />
       <workItem from="1552657814742" duration="259000" />
       <workItem from="1552666880165" duration="952000" />
-      <workItem from="1552680899543" duration="6222000" />
+      <workItem from="1552680899543" duration="6458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="358615000" />
+    <option name="totallyTimeSpent" value="358851000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -491,15 +491,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/standards.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="124" column="15" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="15" />
+        <state relative-caret-position="155">
+          <caret line="125" column="4" lean-forward="true" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+          <caret line="89" column="73" selection-start-line="89" selection-start-column="73" selection-end-line="89" selection-end-column="73" />
         </state>
       </provider>
     </entry>
