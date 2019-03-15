@@ -123,10 +123,14 @@ UA_Boolean running = true;
 
 
 void * database(void *arguments){
+
+
     struct arg_struct *args = (struct arg_struct *) arguments;
     dataPull localdata;
     std::stringstream Intstring;
     int jj = 0;
+
+    std::cout << "database thread started" << args->db_id <<std::endl;
     //cassandra_setup();
     /*start cassandra setting*/
     CassCluster* cluster = NULL;
@@ -168,6 +172,9 @@ void * database(void *arguments){
 
     }
     while(!qDataPull.empty()){
+
+
+        std::cout << "database step 2" << args->db_id <<std::endl;
 
         pthread_mutex_lock(&full_mutex);
         localdata=qDataPull.front();
@@ -377,7 +384,6 @@ void * Readdata(void *arguments) {
                 }
                 pthread_mutex_lock(&full_mutex);
                 qDataPull.push(p);
-
                 pthread_mutex_unlock(&full_mutex);
 
 //                if(args->db_id == 1){
