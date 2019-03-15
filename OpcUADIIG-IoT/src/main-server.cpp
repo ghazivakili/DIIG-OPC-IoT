@@ -71,6 +71,12 @@ int main(int argc, char *argv[]) {
         struct arg_struct args1[NTHREAD];
 
         int upperLevel=(argc-1);
+        if(upperLevel>100){
+
+            std::cout << "your client number is more that our scope : " << upperLevel << std::endl;
+            return 0;
+        }
+
         for (int i = 3; i <= upperLevel; ++i) {
 
             Nodename = argv[i];
