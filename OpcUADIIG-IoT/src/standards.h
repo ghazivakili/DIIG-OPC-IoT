@@ -268,7 +268,7 @@ void * Readdata(void *arguments) {
     struct arg_struct *args = (struct arg_struct *) arguments;
     int jj = 0;
     std::string message_string;
-    std::stringstream Intstring;
+    //std::stringstream Intstring;
     UA_Variant value; /* Variants can hold scalar values and arrays of any type */
     UA_Variant_init(&value);
     //value.dataType = UA_TYPES[UA_TYPES_INT32].typeId;
@@ -291,45 +291,45 @@ void * Readdata(void *arguments) {
     //cassandra_setup();
     dataPull p; //create pool of data fifo
     /*start cassandra setting*/
-    CassCluster* cluster = NULL;
-    CassSession* session = cass_session_new();
-    CassUuidGen* uuid_gen = cass_uuid_gen_new();
-    CassUuid uuid;
-    char* hosts = "127.0.0.1";
-
-    //const char* items[] = { "1", "2", "3", "4", "6","7","8",NULL};
-    const int32_t items[] = { 1, 2, 3, 4, 5,6,7,8};
-    cluster = create_cluster(hosts);
-
-    if (connect_session(session, cluster) != CASS_OK) {
-      cass_cluster_free(cluster);
-      cass_session_free(session);
-      //return -1;
-    }
-    if (args->db_id==2 || args->db_id==4) {
-        create_db_cass(session);
-    }
-
-    /*end cassandra setting*/
-    /*start mongodb setting*/
-    mongo::client::initialize();
-    mongo::DBClientConnection c;
-    BSONObj jsonData;
-    if (args->db_id==3 || args->db_id==4){
-
-
-
-
-    try {
-          c.connect("127.0.0.1");
-          std::cout << "connected ok" << std::endl;
-        } catch( const mongo::DBException &e ) {
-          std::cout << "caught " << e.what() << std::endl;
-        }
-
-
-
-      }
+//    CassCluster* cluster = NULL;
+//    CassSession* session = cass_session_new();
+//    CassUuidGen* uuid_gen = cass_uuid_gen_new();
+//    CassUuid uuid;
+//    char* hosts = "127.0.0.1";
+//
+//    //const char* items[] = { "1", "2", "3", "4", "6","7","8",NULL};
+//    const int32_t items[] = { 1, 2, 3, 4, 5,6,7,8};
+//    cluster = create_cluster(hosts);
+//
+//    if (connect_session(session, cluster) != CASS_OK) {
+//      cass_cluster_free(cluster);
+//      cass_session_free(session);
+//      //return -1;
+//    }
+//    if (args->db_id==2 || args->db_id==4) {
+//        create_db_cass(session);
+//    }
+//
+//    /*end cassandra setting*/
+//    /*start mongodb setting*/
+//    mongo::client::initialize();
+//    mongo::DBClientConnection c;
+//    BSONObj jsonData;
+//    if (args->db_id==3 || args->db_id==4){
+//
+//
+//
+//
+//    try {
+//          c.connect("127.0.0.1");
+//          std::cout << "connected ok" << std::endl;
+//        } catch( const mongo::DBException &e ) {
+//          std::cout << "caught " << e.what() << std::endl;
+//        }
+//
+//
+//
+//      }
     /*end mongodb setting*/
 
 
@@ -377,7 +377,7 @@ void * Readdata(void *arguments) {
                 }
                 pthread_mutex_lock(&full_mutex);
                 qDataPull.push(p);
-                
+
                 pthread_mutex_unlock(&full_mutex);
 
 //                if(args->db_id == 1){
