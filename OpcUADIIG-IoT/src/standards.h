@@ -25,7 +25,7 @@ typedef struct arg_struct {
 
 struct dataPull
 {
-    int data[9];  //pool array
+    int data[10];  //pool array
 };
 queue<dataPull> qDataPull;
 
@@ -191,12 +191,12 @@ void * database(void *arguments){
                 Intstring << localdata.data[0];
                 Intstring << "},";
                 Intstring << "\"dataId\",{";
-                Intstring << jj;
+                Intstring << localdata.data[1];
                 Intstring << "},";
                 Intstring << "{\"data\":{";
-                for (int i = 1; i <= 8; i++) {
+                for (int i = 2; i <= 9; i++) {
                     Intstring << localdata.data[i];
-                    if (i < 8)
+                    if (i < 9)
                         Intstring << ",";
                 }
                 Intstring << "}}}\n";
@@ -230,12 +230,12 @@ void * database(void *arguments){
                 Intstring << localdata.data[0];
                 Intstring << "},";
                 Intstring << "\"dataId\",{";
-                Intstring << jj;
+                Intstring << localdata.data[1];
                 Intstring << "},";
                 Intstring << "{\"data\":{";
-                for (int i = 1; i <= 8; i++) {
+                for (int i = 2; i <= 9; i++) {
                     Intstring << localdata.data[i];
-                    if (i < 8)
+                    if (i < 9)
                         Intstring << ",";
                 }
                 Intstring << "}}}\n";
@@ -378,8 +378,9 @@ void * Readdata(void *arguments) {
             if (valueArr[0] == 2) {
 
                 p.data[0]=args->NodeId.identifier.numeric;
+                p.data[1]=jj;
                 for (int i = 2; i <= 9; i++){
-                    p.data[(i-1)] = valueArr[i];
+                    p.data[(i)] = valueArr[i];
                 }
                 pthread_mutex_lock(&full_mutex);
                 qDataPull.push(p);
