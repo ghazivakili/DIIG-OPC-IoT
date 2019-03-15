@@ -18,27 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d78ae5e-c56d-4b65-a1ac-1aaf312a93e5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../ClientTest/main-client-roundtrip.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientTest/main-client-roundtrip.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientTest/result-01/result01.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientTest/result-01/result02.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientTest/result-01/result04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientTest/result-02/result01.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientTest/result-02/result02.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientTest/result-02/result03.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientTest/result-02/result04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientTest/result-03/result01.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientTest/result-03/result02.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientTest/result-03/result04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientTest/result-04/result01.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientTest/result-04/result02.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientTest/result-04/result04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientTest/testClientRoundTrip" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientTest/testClientRoundTrip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OpcUADIIG-IoT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG-IoT/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OpcUADIIG-IoT/src/main-server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG-IoT/src/main-server.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OpcUADIIG-IoT/src/standards.h" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG-IoT/src/standards.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DIIGatway.dir/src/main-Gateway-testcase.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DIIGatway.dir/src/main-Gateway-testcase.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main-Gateway-testcase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main-Gateway-testcase.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -290,12 +270,12 @@
       <workItem from="1547483049078" duration="40355000" />
       <workItem from="1547730514147" duration="2849000" />
       <workItem from="1552645789976" duration="2242000" />
-      <workItem from="1552658084364" duration="2414000" />
+      <workItem from="1552658084364" duration="2942000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257671000" />
+    <option name="totallyTimeSpent" value="258199000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

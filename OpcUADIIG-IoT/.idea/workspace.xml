@@ -37,29 +37,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main-server.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main-server.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="74" column="39" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="39" />
+            <state relative-caret-position="-113">
+              <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="standards.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="standards.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/standards.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2089">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stdio.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/include/stdio.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12730">
-              <caret line="670" selection-start-line="670" selection-end-line="670" />
+            <state relative-caret-position="780">
+              <caret line="328" column="19" selection-start-line="328" selection-start-column="19" selection-end-line="328" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -107,8 +98,8 @@
         <option value="$PROJECT_DIR$/main-array-nthread.cpp" />
         <option value="$PROJECT_DIR$/main-server.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/standards.h" />
         <option value="$PROJECT_DIR$/src/main-server.cpp" />
+        <option value="$PROJECT_DIR$/src/standards.h" />
       </list>
     </option>
   </component>
@@ -305,12 +296,12 @@
       <workItem from="1540888353128" duration="25661000" />
       <workItem from="1547483047032" duration="3372000" />
       <workItem from="1552657814742" duration="259000" />
-      <workItem from="1552666880165" duration="71000" />
+      <workItem from="1552666880165" duration="700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351512000" />
+    <option name="totallyTimeSpent" value="352141000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -519,17 +510,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main-server.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/standards.h">
+    <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2089">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="-113">
+          <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
+    <entry file="file://$PROJECT_DIR$/src/standards.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="74" column="39" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="39" />
+        <state relative-caret-position="780">
+          <caret line="328" column="19" selection-start-line="328" selection-start-column="19" selection-end-line="328" selection-end-column="19" />
         </state>
       </provider>
     </entry>

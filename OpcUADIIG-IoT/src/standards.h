@@ -326,7 +326,7 @@ void * Readdata(void *arguments) {
 
         }
         //pthread_mutex_unlock(&full_mutex);
-       // usleep(1000000);
+        usleep(1000);
         nanosleep(&tim, (struct timespec *)NULL);
 
 
