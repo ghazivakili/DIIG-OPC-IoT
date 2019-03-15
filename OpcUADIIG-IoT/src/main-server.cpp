@@ -71,7 +71,7 @@ int main(int argc, char *argv[]) {
         struct arg_struct args1[NTHREAD];
 
         int upperLevel=(argc-1);
-        if(upperLevel>100){
+        if(upperLevel>1980){
 
             std::cout << "your client number is more that our scope : " << upperLevel << std::endl;
             return 0;
@@ -91,8 +91,11 @@ int main(int argc, char *argv[]) {
 
         }
 
-        args1[1999].db_id= db_id;
-        pthread_create(&(ftid[1999]), NULL, &database, (void *) &args1[1999]);
+        for(i=1999;i>1970;i--){
+            args1[i].db_id= db_id;
+            pthread_create(&(ftid[i]), NULL, &database, (void *) &args1[i]);
+        }
+
 
 
         UA_Server_run(server, &running);
