@@ -115,8 +115,8 @@ writeVariable(UA_Server *server) {
 UA_Boolean running = true;
 
 
-void * database(){
-
+void * database(void *arguments){
+    struct arg_struct *args = (struct arg_struct *) arguments;
     //cassandra_setup();
     /*start cassandra setting*/
     CassCluster* cluster = NULL;
