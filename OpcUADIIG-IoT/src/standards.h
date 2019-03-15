@@ -1,4 +1,5 @@
 #include "open62541.h"
+#include <queue>
 #ifndef STANDARDS
 #define STANDARDS
 extern "C" {
@@ -21,6 +22,12 @@ typedef struct arg_struct {
     int thread_id;
     int db_id;
 };
+
+struct dataPull
+{
+    int data[9];  //pool array
+};
+queue<dataPull> qDataPull;
 
 UA_Server *server;
 
@@ -117,6 +124,8 @@ UA_Boolean running = true;
 
 void * database(void *arguments){
     struct arg_struct *args = (struct arg_struct *) arguments;
+    dataPull localdata;
+    int jj = 0;
     //cassandra_setup();
     /*start cassandra setting*/
     CassCluster* cluster = NULL;
@@ -157,6 +166,90 @@ void * database(void *arguments){
 
 
     }
+    while(!qDataPull.empty()){
+
+        pthread_mutex_lock(&full_mutex);
+        localdata=qDataPull.front();
+        qDataPull.pop();
+        pthread_mutex_unlock(&full_mutex);
+
+        if(args->db_id == 1){
+
+
+            Intstring.str("");
+            Intstring << "{{\"NodeId\":{";
+            Intstring << "{{\"NodeId\":{";
+            Intstring << localdata.data[0];
+            Intstring << "},";
+            Intstring << "\"dataId\",{";
+            Intstring << jj;
+            Intstring << "},";
+            Intstring << "{\"data\":{";
+            for (int i = 1; i <= 8; i++){
+                Intstring << localdata.data[i];
+                if(i<8)
+                    Intstring << ",";
+            }
+            Intstring << "}}}\n";
+
+
+
+            pthread_mutex_lock(&full_mutex);
+            send_kafka(Intstring.str(),"localhost:9092","test");
+            pthread_mutex_unlock(&full_mutex);
+        }else if(args->db_id == 2){
+
+            pthread_mutex_lock(&full_mutex);
+            cass_uuid_gen_time(uuid_gen, &uuid);
+            insert_into_collections(session, args->NodeId.identifier.numeric , uuid, localdata.data);//
+            pthread_mutex_unlock(&full_mutex);
+            //select_from_collections(session, uuid);
+        }else if(args->db_id == 3){
+
+
+            jsonData = dataToJson(args->NodeId.identifier.numeric,localdata.data);
+
+            pthread_mutex_lock(&full_mutex);
+            c.insert("test.collections",jsonData);
+            pthread_mutex_unlock(&full_mutex);
+
+
+        }else if(args->db_id == 4) {
+            //printf("%d\n", args->db_id );
+            Intstring.str("");
+            Intstring << "{{\"NodeId\":{";
+            Intstring << "{{\"NodeId\":{";
+            Intstring << localdata.data[0];
+            Intstring << "},";
+            Intstring << "\"dataId\",{";
+            Intstring << jj;
+            Intstring << "},";
+            Intstring << "{\"data\":{";
+            for (int i = 1; i <= 8; i++){
+                Intstring << localdata.data[i];
+                if(i<8)
+                    Intstring << ",";
+            }
+            Intstring << "}}}\n";
+
+
+
+            pthread_mutex_lock(&full_mutex);
+            send_kafka(Intstring.str(),"localhost:9092","test");
+            cass_uuid_gen_time(uuid_gen, &uuid);
+            insert_into_collections(session, args->NodeId.identifier.numeric , uuid, localdata.data);
+            pthread_mutex_unlock(&full_mutex);
+
+            pthread_mutex_lock(&full_mutex);
+            jsonData = dataToJson(args->NodeId.identifier.numeric,localdata.data);
+            c.insert("test.collections",jsonData);
+            pthread_mutex_unlock(&full_mutex);
+
+        }else{
+            printf("%d\n", args->db_id );
+        }
+    }
+
 
 }
 
@@ -195,6 +288,7 @@ void * Readdata(void *arguments) {
     int *checkValue;
 
     //cassandra_setup();
+    dataPull p; //create pool of data fifo
     /*start cassandra setting*/
     CassCluster* cluster = NULL;
     CassSession* session = cass_session_new();
@@ -276,81 +370,89 @@ void * Readdata(void *arguments) {
 
             if (valueArr[0] == 2) {
 
-                if(args->db_id == 1){
-
-
-                Intstring.str("");
-                Intstring << "{{\"NodeId\":{";
-                Intstring << "{{\"NodeId\":{";
-                Intstring << args->NodeId.identifier.numeric;
-                Intstring << "},";
-                Intstring << "\"dataId\",{";
-                Intstring << jj;
-                Intstring << "},";
-                Intstring << "{\"data\":{";
+                p.data[0]=args->NodeId.identifier.numeric;
                 for (int i = 2; i <= 9; i++){
-                    Intstring << valueArr[i];
-                    if(i<9)
-                    Intstring << ",";
+                    p.data[(i-1)] valueArr[i];
                 }
-                Intstring << "}}}\n";
-
-
-
                 pthread_mutex_lock(&full_mutex);
-                send_kafka(Intstring.str(),"localhost:9092","test");
-                pthread_mutex_unlock(&full_mutex);
-              }else if(args->db_id == 2){
-
-                pthread_mutex_lock(&full_mutex);
-                cass_uuid_gen_time(uuid_gen, &uuid);
-                insert_into_collections(session, args->NodeId.identifier.numeric , uuid, valueArr);//
-                pthread_mutex_unlock(&full_mutex);
-                //select_from_collections(session, uuid);
-              }else if(args->db_id == 3){
-
-
-                jsonData = dataToJson(args->NodeId.identifier.numeric,valueArr);
-
-                pthread_mutex_lock(&full_mutex);
-                c.insert("test.collections",jsonData);
+                qDataPull.push(p);
                 pthread_mutex_unlock(&full_mutex);
 
-
-              }else if(args->db_id == 4) {
-                //printf("%d\n", args->db_id );
-                Intstring.str("");
-                Intstring << "{{\"NodeId\":{";
-                Intstring << "{{\"NodeId\":{";
-                Intstring << args->NodeId.identifier.numeric;
-                Intstring << "},";
-                Intstring << "\"dataId\",{";
-                Intstring << jj;
-                Intstring << "},";
-                Intstring << "{\"data\":{";
-                for (int i = 2; i <= 9; i++){
-                    Intstring << valueArr[i];
-                    if(i<9)
-                    Intstring << ",";
-                }
-                Intstring << "}}}\n";
-
-
-
-                pthread_mutex_lock(&full_mutex);
-                send_kafka(Intstring.str(),"localhost:9092","test");
-                cass_uuid_gen_time(uuid_gen, &uuid);
-                insert_into_collections(session, args->NodeId.identifier.numeric , uuid, valueArr);
-                pthread_mutex_unlock(&full_mutex);
-
-                pthread_mutex_lock(&full_mutex);
-                jsonData = dataToJson(args->NodeId.identifier.numeric,valueArr);
-                c.insert("test.collections",jsonData);
-                pthread_mutex_unlock(&full_mutex);
-
-              }else{
-                printf("%d\n", args->db_id );
-              }
+//                if(args->db_id == 1){
+//
+//
+//                Intstring.str("");
+//                Intstring << "{{\"NodeId\":{";
+//                Intstring << "{{\"NodeId\":{";
+//                Intstring << args->NodeId.identifier.numeric;
+//                Intstring << "},";
+//                Intstring << "\"dataId\",{";
+//                Intstring << jj;
+//                Intstring << "},";
+//                Intstring << "{\"data\":{";
+//                for (int i = 2; i <= 9; i++){
+//                    Intstring << valueArr[i];
+//                    if(i<9)
+//                    Intstring << ",";
+//                }
+//                Intstring << "}}}\n";
+//
+//
+//
+//                pthread_mutex_lock(&full_mutex);
+//                send_kafka(Intstring.str(),"localhost:9092","test");
+//                pthread_mutex_unlock(&full_mutex);
+//              }else if(args->db_id == 2){
+//
+//                pthread_mutex_lock(&full_mutex);
+//                cass_uuid_gen_time(uuid_gen, &uuid);
+//                insert_into_collections(session, args->NodeId.identifier.numeric , uuid, valueArr);//
+//                pthread_mutex_unlock(&full_mutex);
+//                //select_from_collections(session, uuid);
+//              }else if(args->db_id == 3){
+//
+//
+//                jsonData = dataToJson(args->NodeId.identifier.numeric,valueArr);
+//
+//                pthread_mutex_lock(&full_mutex);
+//                c.insert("test.collections",jsonData);
+//                pthread_mutex_unlock(&full_mutex);
+//
+//
+//              }else if(args->db_id == 4) {
+//                //printf("%d\n", args->db_id );
+//                Intstring.str("");
+//                Intstring << "{{\"NodeId\":{";
+//                Intstring << "{{\"NodeId\":{";
+//                Intstring << args->NodeId.identifier.numeric;
+//                Intstring << "},";
+//                Intstring << "\"dataId\",{";
+//                Intstring << jj;
+//                Intstring << "},";
+//                Intstring << "{\"data\":{";
+//                for (int i = 2; i <= 9; i++){
+//                    Intstring << valueArr[i];
+//                    if(i<9)
+//                    Intstring << ",";
+//                }
+//                Intstring << "}}}\n";
+//
+//
+//
+//                pthread_mutex_lock(&full_mutex);
+//                send_kafka(Intstring.str(),"localhost:9092","test");
+//                cass_uuid_gen_time(uuid_gen, &uuid);
+//                insert_into_collections(session, args->NodeId.identifier.numeric , uuid, valueArr);
+//                pthread_mutex_unlock(&full_mutex);
+//
+//                pthread_mutex_lock(&full_mutex);
+//                jsonData = dataToJson(args->NodeId.identifier.numeric,valueArr);
+//                c.insert("test.collections",jsonData);
+//                pthread_mutex_unlock(&full_mutex);
+//
+//              }else{
+//                printf("%d\n", args->db_id );
+//              }
                 pthread_mutex_lock(&full_mutex);
                 check =UA_Server_writeValue(server,args->NodeId,v3);
                 pthread_mutex_unlock(&full_mutex);
