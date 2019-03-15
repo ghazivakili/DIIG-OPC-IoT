@@ -131,7 +131,7 @@ void * database(void *arguments){
     dataPull localdata;
     std::stringstream Intstring;
     int jj = 0;
-
+    bool check;
     std::cout << "database driver has been started : " << dbname[args->db_id] <<std::endl;
 
     //cassandra_setup();
@@ -175,7 +175,10 @@ void * database(void *arguments){
 
     }
     while(true) {
-        while (!qDataPull.empty()) {
+        pthread_mutex_lock(&full_mutex);
+        check=qDataPull.empty()
+        pthread_mutex_unlock(&full_mutex);
+        while (!check) {
 
 
             //std::cout << "database step 2" << args->db_id << std::endl;
