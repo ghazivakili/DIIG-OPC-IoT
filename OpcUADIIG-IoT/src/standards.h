@@ -16,6 +16,8 @@ char *Nodename= (char*)"Node1";
 #define DELAYREADS 0
 #define DELAYREADNS 100
 
+char* dbname[]={"","kafka","Cassandra","mongodb","mixed:kafka-Cassandra-mongodb"};
+
 typedef struct arg_struct {
     UA_Int32 NodId;
     UA_NodeId NodeId;

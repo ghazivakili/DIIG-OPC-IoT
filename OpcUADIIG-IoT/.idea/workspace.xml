@@ -39,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="53" column="57" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="57" />
+            <state relative-caret-position="330">
+              <caret line="15" column="82" selection-start-line="15" selection-end-line="15" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -48,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/standards.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="132" column="53" selection-start-line="132" selection-start-column="53" selection-end-line="132" selection-end-column="53" />
+            <state relative-caret-position="440">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -309,12 +309,12 @@
       <workItem from="1547483047032" duration="3372000" />
       <workItem from="1552657814742" duration="259000" />
       <workItem from="1552666880165" duration="952000" />
-      <workItem from="1552680899543" duration="8101000" />
+      <workItem from="1552680899543" duration="8194000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="360494000" />
+    <option name="totallyTimeSpent" value="360587000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -492,15 +492,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="53" column="57" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="57" />
+        <state relative-caret-position="330">
+          <caret line="15" column="82" selection-start-line="15" selection-end-line="15" selection-end-column="82" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/standards.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="132" column="53" selection-start-line="132" selection-start-column="53" selection-end-line="132" selection-end-column="53" />
+        <state relative-caret-position="440">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
