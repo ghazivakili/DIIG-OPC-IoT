@@ -259,6 +259,7 @@ void * database(void *arguments){
                 printf("%d\n", args->db_id);
             }
         }
+        usleep(50);
     }
 
 }
