@@ -33,7 +33,7 @@ queue<dataPull> qDataPull;
 
 UA_Server *server;
 
-pthread_mutex_t full_mutex=PTHREAD_MUTEX_INITIALIZER;;
+pthread_mutex_t full_mutex=PTHREAD_MUTEX_INITIALIZER;
 
 
 /*
@@ -181,7 +181,7 @@ void * database(void *arguments){
         while (!check) {
 
 
-            //std::cout << "database step 2" << args->db_id << std::endl;
+            std::cout << "database step 2 - " << args->db_id << " thread no : "<< args->thread_id<< std::endl;
 
             pthread_mutex_lock(&full_mutex);
             localdata = qDataPull.front();

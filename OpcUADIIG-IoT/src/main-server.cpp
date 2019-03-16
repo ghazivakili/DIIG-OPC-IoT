@@ -24,7 +24,7 @@ static void stopHandler(int sign) {
 
 /*
  * define global variables
- *
+ *pthread_mutex_t full_mutex;
  */
 
 #define NTHREAD 2000
