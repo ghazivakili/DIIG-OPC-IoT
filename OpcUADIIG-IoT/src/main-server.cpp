@@ -92,9 +92,19 @@ int main(int argc, char *argv[]) {
             args1[i].NodeId=addVariable(server,Nodename);
             args1[i].db_id= db_id;
             addVariableFail(server, Nodename);
-            pthread_create(&(ftid[i]), NULL, &Readdata, (void *) &args1[i]);
             usleep(5000);
 
+            //pthread_create(&(ftid[i]), NULL, &Readdata, (void *) &args1[i]);
+
+
+
+        }
+        for (int i = 3; i <= upperLevel; ++i) {
+
+            Nodename = argv[i];
+            printf("argv[%d] = %s \n", i, argv[i]);
+            pthread_create(&(ftid[i]), NULL, &Readdata, (void *) &args1[i]);
+            usleep(5000);
 
         }
 

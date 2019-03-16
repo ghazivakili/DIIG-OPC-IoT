@@ -39,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="73" column="64" selection-start-line="73" selection-start-column="64" selection-end-line="73" selection-end-column="64" />
+            <state relative-caret-position="88">
+              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
             </state>
           </provider>
         </entry>
@@ -58,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/text.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
+              <caret selection-end-column="3891" />
             </state>
           </provider>
         </entry>
@@ -106,6 +106,7 @@
       <find>full_mutex</find>
       <find>arg_struct</find>
       <find>password</find>
+      <find>node500</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -169,6 +170,11 @@
             <path>
               <item name="OpcUAServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpcUADIIG-IoT" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpcUAServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpcUADIIG-IoT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -325,12 +331,12 @@
       <workItem from="1552666880165" duration="952000" />
       <workItem from="1552680899543" duration="13967000" />
       <workItem from="1552720877021" duration="3913000" />
-      <workItem from="1552734444488" duration="660000" />
+      <workItem from="1552734444488" duration="1663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="370933000" />
+    <option name="totallyTimeSpent" value="371936000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -345,7 +351,7 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15439956" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15439956" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -358,7 +364,7 @@
       <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.5860585" visible="true" weight="0.3824131" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.078583285" side_tool="true" weight="0.30387932" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.9214167" visible="true" weight="0.30387932" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.9214167" visible="true" weight="0.30387932" />
       <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.5517432" weight="0.33512932" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -505,13 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mongodbdriver.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -525,10 +524,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/text.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="3891" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="73" column="64" selection-start-line="73" selection-start-column="64" selection-end-line="73" selection-end-column="64" />
+        <state relative-caret-position="88">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
         </state>
       </provider>
     </entry>
