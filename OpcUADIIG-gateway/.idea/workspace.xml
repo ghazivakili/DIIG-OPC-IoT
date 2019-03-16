@@ -17,7 +17,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6d78ae5e-c56d-4b65-a1ac-1aaf312a93e5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../OpcUADIIG-IoT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG-IoT/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main-Gateway-testcase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main-Gateway-testcase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main-Gateway.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main-Gateway.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,23 +37,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main-Gateway.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3300">
-              <caret line="150" column="39" selection-start-line="150" selection-start-column="39" selection-end-line="150" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="470">
+              <caret line="233" column="100" selection-start-line="233" selection-start-column="93" selection-end-line="233" selection-end-column="100" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main-Gateway-testcase.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="233" column="109" selection-start-line="233" selection-start-column="109" selection-end-line="233" selection-end-column="109" />
+            <state relative-caret-position="317">
+              <caret line="225" column="4" selection-start-line="225" selection-start-column="4" selection-end-line="227" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -115,6 +112,7 @@
         <option value="$PROJECT_DIR$/main-nthread-latency.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/main-Gateway-testcase.cpp" />
+        <option value="$PROJECT_DIR$/src/main-Gateway.cpp" />
       </list>
     </option>
   </component>
@@ -275,12 +273,12 @@
       <workItem from="1547730514147" duration="2849000" />
       <workItem from="1552645789976" duration="2242000" />
       <workItem from="1552658084364" duration="2942000" />
-      <workItem from="1552724679851" duration="840000" />
+      <workItem from="1552724679851" duration="1083000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259039000" />
+    <option name="totallyTimeSpent" value="259282000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,16 +424,6 @@
     <entry file="file:///usr/local/include/libmongoc-1.0/mongoc/mongoc.h" />
     <entry file="file://$PROJECT_DIR$/main-nthread-latency_works_without_fieldbus.cpp" />
     <entry file="file://$PROJECT_DIR$/main-nthread-latency.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/main-Gateway.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3300">
-          <caret line="150" column="39" selection-start-line="150" selection-start-column="39" selection-end-line="150" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/open62541.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -452,8 +440,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main-Gateway-testcase.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="233" column="109" selection-start-line="233" selection-start-column="109" selection-end-line="233" selection-end-column="109" />
+        <state relative-caret-position="317">
+          <caret line="225" column="4" selection-start-line="225" selection-start-column="4" selection-end-line="227" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main-Gateway.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="233" column="100" selection-start-line="233" selection-start-column="93" selection-end-line="233" selection-end-column="100" />
         </state>
       </provider>
     </entry>

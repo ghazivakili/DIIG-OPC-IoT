@@ -223,10 +223,15 @@ connection:
     //pthread_mutex_lock(&full_mutex);
     UA_ClientConfig config= UA_ClientConfig_standard;
 
+    UA_UsernamePasswordLogin useriot;
+    useriot.username=UA_String_fromChars("mohamad");
+    useriot.password=UA_String_fromChars("123456");
+
     UA_Client *client = UA_Client_new(config);
 
     //UA_StatusCode retval = UA_Client_connect(client, "opc.tcp://localhost:4888");
-    UA_StatusCode retval = UA_Client_connect(client, (char *) args->linkConnection);
+    //UA_StatusCode retval = UA_Client_connect(client, (char *) args->linkConnection);
+    UA_StatusCode retval = UA_Client_connect_username(client, (char *) args->linkConnection,"mohamad","123456");
     if(retval != UA_STATUSCODE_GOOD) {
         UA_Client_delete(client);
         std::cout<<"error code"<< (int)retval<<std::endl;
