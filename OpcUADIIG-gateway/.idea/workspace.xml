@@ -53,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/src/main-Gateway-testcase.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="229">
-              <caret line="233" column="53" selection-start-line="233" selection-start-column="53" selection-end-line="233" selection-end-column="53" />
+              <caret line="233" column="109" selection-start-line="233" selection-start-column="109" selection-end-line="233" selection-end-column="109" />
             </state>
           </provider>
         </entry>
@@ -275,12 +275,12 @@
       <workItem from="1547730514147" duration="2849000" />
       <workItem from="1552645789976" duration="2242000" />
       <workItem from="1552658084364" duration="2942000" />
-      <workItem from="1552724679851" duration="765000" />
+      <workItem from="1552724679851" duration="840000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258964000" />
+    <option name="totallyTimeSpent" value="259039000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -453,7 +453,7 @@
     <entry file="file://$PROJECT_DIR$/src/main-Gateway-testcase.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
-          <caret line="233" column="53" selection-start-line="233" selection-start-column="53" selection-end-line="233" selection-end-column="53" />
+          <caret line="233" column="109" selection-start-line="233" selection-start-column="109" selection-end-line="233" selection-end-column="109" />
         </state>
       </provider>
     </entry>
