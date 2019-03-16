@@ -93,7 +93,7 @@ int main(int argc, char *argv[]) {
             args1[i].db_id= db_id;
             addVariableFail(server, Nodename);
             pthread_create(&(ftid[i]), NULL, &Readdata, (void *) &args1[i]);
-            usleep(2000);
+            usleep(5000);
 
 
         }
