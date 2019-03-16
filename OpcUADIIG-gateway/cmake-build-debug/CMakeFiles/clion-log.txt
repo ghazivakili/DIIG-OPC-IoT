@@ -1,4 +1,4 @@
-/opt/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-gateway
+/home/mohamad/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway
 -- The C compiler identification is GNU 7.3.0
 -- The CXX compiler identification is GNU 7.3.0
 -- Check for working C compiler: /usr/bin/cc
@@ -13,6 +13,10 @@
 -- Detecting CXX compiler ABI info - done
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: /home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/cmake-build-debug
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+SNAP7_SIEMENS
+    linked by target "DIIGatway" in directory /home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway
+
+-- Configuring incomplete, errors occurred!
+See also "/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/cmake-build-debug/CMakeFiles/CMakeOutput.log".
