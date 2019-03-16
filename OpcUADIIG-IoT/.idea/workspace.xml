@@ -40,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="72" column="51" selection-start-line="72" selection-start-column="51" selection-end-line="72" selection-end-column="51" />
+              <caret line="72" column="52" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -329,12 +329,12 @@
       <workItem from="1552657814742" duration="259000" />
       <workItem from="1552666880165" duration="952000" />
       <workItem from="1552680899543" duration="13967000" />
-      <workItem from="1552720877021" duration="1826000" />
+      <workItem from="1552720877021" duration="2008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="368186000" />
+    <option name="totallyTimeSpent" value="368368000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -360,9 +360,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49126637" weight="0.3291536" />
       <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.5860585" visible="true" weight="0.3824131" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.37244052" side_tool="true" visible="true" weight="0.30387932" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.078583285" side_tool="true" visible="true" weight="0.30387932" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.6275595" visible="true" weight="0.30387932" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.9214167" visible="true" weight="0.30387932" />
       <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.5517432" weight="0.33512932" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -532,7 +532,7 @@
     <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="72" column="51" selection-start-line="72" selection-start-column="51" selection-end-line="72" selection-end-column="51" />
+          <caret line="72" column="52" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
         </state>
       </provider>
     </entry>
