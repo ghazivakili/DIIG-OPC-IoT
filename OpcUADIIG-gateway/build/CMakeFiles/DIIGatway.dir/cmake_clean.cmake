@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DIIGatway.dir/src/main-Gateway.cpp.o"
+  "CMakeFiles/DIIGatway.dir/src/main-Gateway-client-generation.cpp.o"
   "CMakeFiles/DIIGatway.dir/src/open62541.c.o"
   "CMakeFiles/DIIGatway.dir/src/snap7.cpp.o"
   "DIIGatway.pdb"

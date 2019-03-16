@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/main-Gateway.cpp
+/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/main-Gateway-client-generation.cpp
 signal.h
 -
 stdio.h
@@ -18,15 +18,15 @@ random
 ctime
 -
 open62541.h
-/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.h
+/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.h
 iostream
 -
 snap7.h
-/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/snap7.h
+/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/snap7.h
 open62541.h
-/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.h
+/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.h
 
-/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.h
+/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.h
 stddef.h
 -
 stdint.h
@@ -62,11 +62,11 @@ wchar.h
 stdarg.h
 -
 
-/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/snap7.cpp
+/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/snap7.cpp
 snap7.h
-/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/snap7.h
+/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/snap7.h
 
-/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/snap7.h
+/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/snap7.h
 unistd.h
 -
 string
