@@ -20,7 +20,6 @@
     <list default="true" id="6d78ae5e-c56d-4b65-a1ac-1aaf312a93e5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../OpcUADIIG-IoT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG-IoT/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OpcUADIIG-IoT/src/main-server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG-IoT/src/main-server.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main-Gateway-client-generation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main-Gateway-client-generation.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -273,12 +272,12 @@
       <workItem from="1547730514147" duration="2849000" />
       <workItem from="1552645789976" duration="2242000" />
       <workItem from="1552658084364" duration="2942000" />
-      <workItem from="1552724679851" duration="8338000" />
+      <workItem from="1552724679851" duration="8650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266537000" />
+    <option name="totallyTimeSpent" value="266849000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -291,7 +290,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1793027" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
