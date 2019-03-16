@@ -62,10 +62,15 @@ int main(int argc, char *argv[]) {
 
 
         UA_ServerConfig config = UA_ServerConfig_standard;
+        UA_UsernamePasswordLogin useriot;
+        useriot.username=UA_String_fromChars("user1");
+        useriot.password=UA_String_fromChars("user1");
         UA_ServerNetworkLayer nl =  UA_ServerNetworkLayerTCP(UA_ConnectionConfig_standard, lisiningPort);
         config.networkLayers = &nl;
         config.networkLayersSize = 1;
         config.nThreads=20;
+        config.usernamePasswordLogins[1]=useriot;
+        config.enableUsernamePasswordLogin= True;
         server = UA_Server_new(config);
 
         struct arg_struct args1[NTHREAD];

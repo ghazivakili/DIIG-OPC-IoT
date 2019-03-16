@@ -36,11 +36,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="95" column="79" selection-start-line="95" selection-start-column="79" selection-end-line="95" selection-end-column="79" />
+            <state relative-caret-position="285">
+              <caret line="72" column="49" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/open62541.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="3979" column="69" selection-start-line="3979" selection-start-column="61" selection-end-line="3979" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -54,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/standards.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="183" column="16" selection-start-line="183" selection-start-column="16" selection-end-line="183" selection-end-column="16" />
+            <state relative-caret-position="1848">
+              <caret line="388" lean-forward="true" selection-start-line="388" selection-end-line="388" />
             </state>
           </provider>
         </entry>
@@ -96,6 +105,7 @@
       <find>dbname</find>
       <find>full_mutex</find>
       <find>arg_struct</find>
+      <find>password</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -120,17 +130,17 @@
         <option value="$PROJECT_DIR$/main-array-nthread.cpp" />
         <option value="$PROJECT_DIR$/main-server.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/main-server.cpp" />
         <option value="$PROJECT_DIR$/src/standards.h" />
+        <option value="$PROJECT_DIR$/src/main-server.cpp" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="2493" />
-    <option name="height" value="1415" />
+    <option name="x" value="531" />
+    <option name="y" value="291" />
+    <option name="width" value="1389" />
+    <option name="height" value="789" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -319,12 +329,12 @@
       <workItem from="1552657814742" duration="259000" />
       <workItem from="1552666880165" duration="952000" />
       <workItem from="1552680899543" duration="13967000" />
-      <workItem from="1552720877021" duration="51000" />
+      <workItem from="1552720877021" duration="1760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="366411000" />
+    <option name="totallyTimeSpent" value="368120000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -505,17 +515,24 @@
     <entry file="file://$PROJECT_DIR$/src/kafkadriver.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
+    <entry file="file://$PROJECT_DIR$/src/standards.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="95" column="79" selection-start-line="95" selection-start-column="79" selection-end-line="95" selection-end-column="79" />
+        <state relative-caret-position="1848">
+          <caret line="388" lean-forward="true" selection-start-line="388" selection-end-line="388" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/standards.h">
+    <entry file="file://$PROJECT_DIR$/src/open62541.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="183" column="16" selection-start-line="183" selection-start-column="16" selection-end-line="183" selection-end-column="16" />
+        <state relative-caret-position="188">
+          <caret line="3979" column="69" selection-start-line="3979" selection-start-column="61" selection-end-line="3979" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="72" column="49" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
         </state>
       </provider>
     </entry>
