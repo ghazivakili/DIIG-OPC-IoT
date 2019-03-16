@@ -129,6 +129,7 @@ void * database(void *arguments){
 
     struct arg_struct *args = (struct arg_struct *) arguments;
     dataPull localdata;
+    int code;
     std::stringstream Intstring;
     int jj = 0;
     bool check;
@@ -175,9 +176,11 @@ void * database(void *arguments){
 
     }
     while(true) {
-        pthread_mutex_lock(&full_mutex);
+        code=pthread_mutex_lock(&full_mutex);
+        std::cout << code ;
         check=qDataPull.empty();
         pthread_mutex_unlock(&full_mutex);
+        std::cout << code <<std::endl;
         while (!check) {
 
 
