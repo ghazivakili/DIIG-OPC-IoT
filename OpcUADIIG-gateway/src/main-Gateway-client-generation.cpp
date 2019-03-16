@@ -472,7 +472,7 @@ int main(int argc, char *argv[]) {
 
             pthread_create(&(ftid[counter]), NULL, &connectToClient, (void *) &args1[counter]);
             nodeGenerator = nodeGenerator + 2;
-            usleep(100000);
+            usleep(10000);
             //pthread_create(&(rtid[counter]), NULL, &taskWrite, (void *) &thread_id[counter]);  //
         }
 
