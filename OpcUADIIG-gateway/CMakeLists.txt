@@ -9,8 +9,9 @@ FIND_LIBRARY(SNAP7_SIEMENS snap7 library
         PATHS /usr/lib)
 
 set(SOURCE_FILES
-        src/main-Gateway.cpp # Throuput And main application
+#        src/main-Gateway.cpp # Throuput And main application
 #        src/main-Gateway-testcase.cpp # Roundtrip min&max
+        src/main-Gateway-client-generation.cpp
         src/open62541.c
         src/open62541.h
         src/snap7.cpp)

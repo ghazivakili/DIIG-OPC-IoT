@@ -224,7 +224,7 @@ ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 
 //Path to a library.
-SNAP7_SIEMENS:FILEPATH=SNAP7_SIEMENS-NOTFOUND
+SNAP7_SIEMENS:FILEPATH=/usr/lib/libsnap7.so
 
 
 ########################

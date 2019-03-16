@@ -14,7 +14,7 @@ extern "C" {
 // Get declaration for f(int i, char c, float x)
 #include "open62541.h"
 }
-#define NTHREAD 20
+#define NTHREAD 2000
 #define NTHREADG 10
 
 pthread_t ftid[NTHREAD];
@@ -275,124 +275,13 @@ connection:
     printf("step1~! %d \n", args->NodId);
     //while (1) {
     while (jj < totalloop ) {
-//       if(((std::clock()-startTimeForloop)/CLOCKS_PER_SEC)<=10) {
 
-        /****START shop floor*****/
-        pthread_mutex_lock(&full_mutex);
-        Index = DB7[*id];
-        pthread_mutex_unlock(&full_mutex);
 
-        readIndex=Index*8;
-
-        switch (*id) {
-            case 1:  //  Relay the data DB  from DB1[Index]  to DB1[Index+8]
-
-                fullIndex=(*id-1)*32+Index;
-                /*Server->LockArea(5,5);
-                db51=DB5[fullIndex];
-                Server->UnlockArea(5,5);*/
-                if(DB5[fullIndex]==1){
-                    Server->LockArea(5,5);
-                        dataG[0]=2;
-                        dataG[1]=jj;
-                    for (int i = 2; i < 10; i++) {
-                        j=(i-2);
-                        dataG[i]=DB1[readIndex+j];
-                      }
-                    DB5[fullIndex]=0;
-                    Server->UnlockArea(5,5);
-                    status_1=1;
-                    //usleep(4000);
-                    fair1++;
-                    if(fair1>=totalloop)
-                        DB8[*id]=0x01;
-                }
-                //break;
-            case 2:
-
-                fullIndex=(*id-1)*32+Index;
-                /*Server->LockArea(5,5);
-                db52=DB5[fullIndex];
-                Server->UnlockArea(5,5);*/
-                if(DB5[fullIndex]==1){
-
-                    Server->LockArea(5,5);
-                        dataG[0]=2;
-                        dataG[1]=jj;
-                    for (int i = 2; i < 10; i++) {
-                         j=(i-2);
-                        dataG[i]=DB2[readIndex+j];
-                      }
-                    DB5[fullIndex]=0;
-                    Server->UnlockArea(5,5);
-                    status_2=1;
-                    //usleep(4000);
-                    fair2++;
-                    if(fair2>=totalloop)
-                        DB8[*id]=0x01;
-                }
-                //break;
-            case 3:
-                fullIndex=(*id-1)*32+Index;
-                /*Server->LockArea(5,5);
-                db53=DB5[fullIndex];
-                Server->UnlockArea(5,5);*/
-                if(DB5[fullIndex]==1){
-
-                    Server->LockArea(5,5);
-                    dataG[0]=2;
-                    dataG[1]=jj;
-                    for (int i = 2; i < 10; i++) {
-                      j=(i-2);
-                        dataG[i]=DB3[readIndex+j];
-                      }
-                    DB5[fullIndex]=0;
-                    Server->UnlockArea(5,5);
-                    status_3=1;
-                    //usleep(4000);
-                    fair3++;
-                    if(fair3>=totalloop)
-                        DB8[*id]=0x01;
-                }
-                //break;
-            case 4:
-                //printf("Relay DB4[%d]:%x \n",*id,DB4[Index]);
-                fullIndex=(*id-1)*32+Index;
-                /*Server->LockArea(5,5);
-                db54=DB5[fullIndex];
-                Server->UnlockArea(5,5);*/
-                if(DB5[fullIndex]==1){
-
-                    Server->LockArea(5,5);
-                    dataG[0]=2;
-                    dataG[1]=jj;
-                    for (int i = 2; i < 10; i++) {
-                        j=(i-2);
-                        dataG[i]=DB4[readIndex+j];
-                      }
-                    DB5[fullIndex]=0;
-                    Server->UnlockArea(5,5);
-
-                    status_4=1;
-                    //usleep(4000);
-                    fair4++;
-                    if(fair4>=totalloop)
-                        DB8[*id]=0x01;
-                }
-                //break;
-        }
-        /****END shop floor*****/
-      //  dataG[10] = [2,1,23,5,5,54,4,5,8,4];
-    /*        std::cout << *id << "=>";
-        for (int i = 0; i < 10; i++) {
-            cout << dataG[i] << " ";
-          }
-          std::cout << std::endl;*/
-        //dataG[1] = 2;//{2,1,23,5,5,54,4,5,8,4};
+       // dataG[1] = 2;//{2,1,23,5,5,54,4,5,8,4};
         retry:
         startTimeforEach = std::clock();
 
-        if(status_1==1 || status_2==1 || status_3==1 || status_4==1) {
+      //  if(status_1==1 || status_2==1 || status_3==1 || status_4==1) {
 
         //if(status_1==1) {
             pthread_mutex_lock(&full_mutex);
@@ -414,7 +303,8 @@ connection:
                 //pthread_mutex_unlock(&full_mutex);
                 if (checkpoint == 1) {
 
-
+                    dataG[0]=2;
+                    dataG[1]=jj;
                     //writePosition:
                     UA_Variant_setArrayCopy(&v3, dataG, nx, &UA_TYPES[UA_TYPES_INT32]);
 
@@ -442,10 +332,10 @@ connection:
                             lastmaxforeach = latencyforeach;
                         }
 
-                        status_1=0;
-                        status_2=0;
-                        status_3=0;
-                        status_4=0;
+//                        status_1=0;
+//                        status_2=0;
+//                        status_3=0;
+//                        status_4=0;
 
                     } else {
 
@@ -461,8 +351,8 @@ connection:
 
             }
 
-            //usleep(1000);//10000
-        }
+            usleep(1000);//10000
+        //}
        // nanosleep(&tim, (struct timespec *)NULL);
 
 //       }else{
@@ -473,7 +363,7 @@ connection:
 
     }
 
-        DB8[*id]=0x01;
+    ///    DB8[*id]=0x01;
 
 //    pthread_mutex_lock(&full_mutex);
 //    total[args->thread_id] = ++jj;
@@ -514,6 +404,7 @@ int main(int argc, char *argv[]) {
     double startClockLatancy;//
     double stopTime;//
     double totalTime;//
+    int32_t nodeGenerator = 0;
 
     step7Server();
 
@@ -560,23 +451,27 @@ int main(int argc, char *argv[]) {
 
        // while (1);;
 
+        nodeGenerator = atoi(argv[4]);
+
         startClock = std::clock();
         startClockLatancy = std::clock();
+
         for (int counter = 1; counter <= atoi(argv[3]); counter++)// Creating free flag and Relay thread workers
         {
             thread_id[counter] = counter;
-            No = counter + 4;
-            args1[counter].NodId = (UA_Int32) atoi(argv[No]);
+
+            args1[counter].NodId = (UA_Int32) nodeGenerator;
             args1[counter].thread_id = counter;
             args1[counter].linkConnection = argv[1];
             args1[counter].totalOpration = optotal;
             std::cout << "--------------------------------------------------------------- " << std::endl;
-            std::cout << " Node ID connected : " << args1[counter].NodId << std::endl;
+            std::cout << " Node ID connected : " << args1[counter].NodId << ","<<nodeGenerator << std::endl;
 
-            pthread_create(&(ftid[counter]), NULL, &task1, (void *) &thread_id[counter]);
+            //pthread_create(&(ftid[counter]), NULL, &task1, (void *) &thread_id[counter]);
             //pthread_create(&(rtid[counter]), NULL, &task2, (void *) &thread_id[counter]);  //
 
             pthread_create(&(ftid[counter]), NULL, &connectToClient, (void *) &args1[counter]);
+            nodeGenerator = nodeGenerator + 2;
             usleep(10000);
             //pthread_create(&(rtid[counter]), NULL, &taskWrite, (void *) &thread_id[counter]);  //
         }
