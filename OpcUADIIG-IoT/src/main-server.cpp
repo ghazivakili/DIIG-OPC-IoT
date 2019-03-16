@@ -27,7 +27,7 @@ static void stopHandler(int sign) {
  *pthread_mutex_t full_mutex;
  */
 
-#define NTHREAD 2000
+#define NTHREAD 4000
 pthread_t ftid[NTHREAD];
 pthread_t rtid[NTHREAD];
 int thread_id[NTHREAD];
@@ -93,6 +93,7 @@ int main(int argc, char *argv[]) {
             args1[i].db_id= db_id;
             addVariableFail(server, Nodename);
             pthread_create(&(ftid[i]), NULL, &Readdata, (void *) &args1[i]);
+            usleep(2000);
 
 
         }
