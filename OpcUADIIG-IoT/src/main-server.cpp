@@ -91,7 +91,7 @@ int main(int argc, char *argv[]) {
 
         }
 
-        for(int i=1990;i<2000;++i){
+        for(int i=1999;i<2000;++i){
             args1[i].db_id= db_id;
             pthread_create(&(ftid[i]), NULL, &database, (void *) &args1[i]);
         }
