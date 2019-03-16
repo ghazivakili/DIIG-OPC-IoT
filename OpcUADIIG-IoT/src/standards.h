@@ -181,7 +181,7 @@ void * database(void *arguments){
 //        check=qDataPull.empty();
 //        pthread_mutex_unlock(&full_mutex);
 //        std::cout << code <<std::endl;
-        while (qDataPull.empty()) {
+        while (!qDataPull.empty()) {
 
 
             //std::cout << "database step 2 - " << args->db_id << " thread no : "<< args->thread_id<< std::endl;
