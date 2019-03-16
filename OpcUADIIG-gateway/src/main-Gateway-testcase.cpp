@@ -231,7 +231,7 @@ connection:
 
     //UA_StatusCode retval = UA_Client_connect(client, "opc.tcp://localhost:4888");
    // UA_StatusCode retval = UA_Client_connect(client, (char *) args->linkConnection);
-    UA_StatusCode retval = UA_Client_connect(client, (char *) args->linkConnection,useriot.username,useriot.password);
+    UA_StatusCode retval = UA_Client_connect_username(client, (char *) args->linkConnection,useriot.username,useriot.password);
     if(retval != UA_STATUSCODE_GOOD) {
         UA_Client_delete(client);
         std::cout<<"error code"<< (int)retval<<std::endl;
