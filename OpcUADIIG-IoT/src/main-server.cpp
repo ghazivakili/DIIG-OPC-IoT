@@ -91,10 +91,10 @@ int main(int argc, char *argv[]) {
 
         }
 
-        for(int i=1999;i<2000;++i){
-            args1[i].db_id= db_id;
-            pthread_create(&(ftid[i]), NULL, &database, (void *) &args1[i]);
-        }
+        //for(int i=1999;i<2000;++i){
+            args1[1999].db_id= db_id;
+            pthread_create(&(ftid[1999]), NULL, &database, (void *) &args1[1999]);
+        //}
 
 
 
