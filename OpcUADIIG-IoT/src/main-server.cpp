@@ -71,7 +71,7 @@ int main(int argc, char *argv[]) {
         config.nThreads=20;
         config.usernamePasswordLogins[1]=useriot;
         config.enableUsernamePasswordLogin= UA_TRUE;
-        config.enableAnonymousLogin = UA_FALSE;
+        config.enableAnonymousLogin = UA_TRUE; //should be false
         server = UA_Server_new(config);
 
         struct arg_struct args1[NTHREAD];
