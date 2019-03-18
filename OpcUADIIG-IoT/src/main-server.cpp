@@ -100,7 +100,7 @@ int main(int argc, char *argv[]) {
             Nodename = argv[i];
             printf("argv[%d] = %s \n", i, argv[i]);
             pthread_create(&(ftid[i]), NULL, &Readdata, (void *) &args1[i]);
-            usleep(5000);
+            usleep(50000);
 
         }
 

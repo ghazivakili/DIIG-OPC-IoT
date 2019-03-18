@@ -1,3 +1,3 @@
-/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/cmake-build-debug/CMakeFiles/DIIGatway.dir
-/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/cmake-build-debug/CMakeFiles/DIIGatway.dir

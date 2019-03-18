@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.c" "/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/cmake-build-debug/CMakeFiles/DIIGatway.dir/src/open62541.c.o"
+  "/home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.c" "/home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/cmake-build-debug/CMakeFiles/DIIGatway.dir/src/open62541.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -13,8 +13,8 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/main-Gateway-client-generation.cpp" "/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/cmake-build-debug/CMakeFiles/DIIGatway.dir/src/main-Gateway-client-generation.cpp.o"
-  "/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/snap7.cpp" "/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/cmake-build-debug/CMakeFiles/DIIGatway.dir/src/snap7.cpp.o"
+  "/home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/main-Gateway-client-generation.cpp" "/home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/cmake-build-debug/CMakeFiles/DIIGatway.dir/src/main-Gateway-client-generation.cpp.o"
+  "/home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/snap7.cpp" "/home/mohamad/remote_workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/cmake-build-debug/CMakeFiles/DIIGatway.dir/src/snap7.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
