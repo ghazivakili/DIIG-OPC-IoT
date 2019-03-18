@@ -351,7 +351,7 @@ connection:
 
             }
 
-            usleep(1000);//10000
+            usleep(100);//10000
         //}
        // nanosleep(&tim, (struct timespec *)NULL);
 
@@ -472,7 +472,7 @@ int main(int argc, char *argv[]) {
 
             pthread_create(&(ftid[counter]), NULL, &connectToClient, (void *) &args1[counter]);
             nodeGenerator = nodeGenerator + 2;
-            sleep(1);
+            usleep(10000);
             //pthread_create(&(rtid[counter]), NULL, &taskWrite, (void *) &thread_id[counter]);  //
         }
 

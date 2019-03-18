@@ -20,6 +20,7 @@
     <list default="true" id="6d78ae5e-c56d-4b65-a1ac-1aaf312a93e5" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OpcUADIIG-IoT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG-IoT/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpcUADIIG-IoT/src/main-server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG-IoT/src/main-server.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OpcUADIIG-IoT/src/standards.h" beforeDir="false" afterPath="$PROJECT_DIR$/../OpcUADIIG-IoT/src/standards.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
@@ -60,8 +61,8 @@
       <file leaf-file-name="main-Gateway-client-generation.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main-Gateway-client-generation.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="976">
-              <caret line="376" column="13" selection-start-line="376" selection-start-column="13" selection-end-line="376" selection-end-column="13" />
+            <state relative-caret-position="-2064">
+              <caret line="351" column="13" lean-forward="true" selection-start-line="351" selection-start-column="13" selection-end-line="351" selection-end-column="13" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -293,7 +294,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271251000" />
+    <option name="totallyTimeSpent" value="271959000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -564,8 +565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main-Gateway-client-generation.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="976">
-          <caret line="376" column="13" selection-start-line="376" selection-start-column="13" selection-end-line="376" selection-end-column="13" />
+        <state relative-caret-position="-2064">
+          <caret line="351" column="13" lean-forward="true" selection-start-line="351" selection-start-column="13" selection-end-line="351" selection-end-column="13" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
