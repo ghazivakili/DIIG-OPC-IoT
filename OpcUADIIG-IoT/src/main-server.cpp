@@ -73,6 +73,7 @@ int main(int argc, char *argv[]) {
         config.enableUsernamePasswordLogin= UA_TRUE;
         config.enableAnonymousLogin = UA_TRUE; //should be false
         config.maxSessions = 1000;
+        config.maxSecureChannels= 1000;
         server = UA_Server_new(config);
 
         struct arg_struct args1[NTHREAD];
