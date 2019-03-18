@@ -48,7 +48,7 @@ addVariableType2DPoint(UA_Server *server,
     UA_VariableTypeAttributes_init(&vtAttr);
     //vtAttr.dataType = UA_TYPES[UA_TYPES_DOUBLE].typeId;
     vtAttr.dataType = UA_TYPES[UA_TYPES_INT32].typeId;
-    vtAttr.valueRank = 1; /* array with one dimension */
+    //vtAttr.valueRank = 1; /* array with one dimension */
     UA_UInt32 arrayDims[1] = {nx};//,ny};//2
     vtAttr.arrayDimensions = arrayDims;
     vtAttr.arrayDimensionsSize = ny;//2
@@ -56,7 +56,7 @@ addVariableType2DPoint(UA_Server *server,
 
     /* a matching default value is required */
 
-    UA_Int32 zerox[nx] = { 1, 0, 0 , 0,0, 0, 0 , 0};
+    UA_Int32 zerox[nx] = { 1, 0, 0 , 0,0, 0, 0 , 0,0,0};
 
     UA_Variant_setArray(&vtAttr.value, zerox , nx, &UA_TYPES[UA_TYPES_INT32]);
 
@@ -76,7 +76,7 @@ addVariable(UA_Server *server,
     UA_VariableAttributes vAttr;
     UA_VariableAttributes_init(&vAttr);
     vAttr.dataType = UA_TYPES[UA_TYPES_INT32].typeId;
-    vAttr.valueRank = 1; /* array with one dimension */
+    //vAttr.valueRank = 1; /* array with one dimension */
     UA_UInt32 arrayDims[1] = {nx};//,ny};
     vAttr.arrayDimensions = arrayDims;
     vAttr.arrayDimensionsSize = ny;
