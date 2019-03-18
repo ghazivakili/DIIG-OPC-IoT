@@ -41,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="411">
-              <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+              <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -58,8 +58,11 @@
       <file leaf-file-name="open62541.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/open62541.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75601">
-              <caret line="3979" column="69" selection-start-line="3979" selection-start-column="61" selection-end-line="3979" selection-end-column="69" />
+            <state relative-caret-position="487">
+              <caret line="11653" column="31" selection-start-line="11653" selection-start-column="22" selection-end-line="11653" selection-end-column="31" />
+              <folding>
+                <element signature="e#437654#437669#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -333,12 +336,12 @@
       <workItem from="1552680899543" duration="13967000" />
       <workItem from="1552720877021" duration="3913000" />
       <workItem from="1552734444488" duration="2947000" />
-      <workItem from="1552909806977" duration="2020000" />
+      <workItem from="1552909806977" duration="2745000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="375240000" />
+    <option name="totallyTimeSpent" value="375965000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -452,6 +455,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75601">
           <caret line="3979" column="69" selection-start-line="3979" selection-start-column="61" selection-end-line="3979" selection-end-column="69" />
+          <folding>
+            <element signature="e#437654#437669#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -530,13 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/open62541.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75601">
-          <caret line="3979" column="69" selection-start-line="3979" selection-start-column="61" selection-end-line="3979" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/standards.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6080">
@@ -558,10 +557,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/open62541.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="11653" column="31" selection-start-line="11653" selection-start-column="22" selection-end-line="11653" selection-end-column="31" />
+          <folding>
+            <element signature="e#437654#437669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
-          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+          <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
         </state>
       </provider>
     </entry>
