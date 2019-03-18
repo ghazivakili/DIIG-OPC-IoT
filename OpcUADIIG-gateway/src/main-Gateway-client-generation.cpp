@@ -372,9 +372,9 @@ connection:
     pthread_mutex_lock(&full_mutex);
     //std::cout << "starttime" << startTimeForloop << "stop time" << std::clock() << std::endl;
     totalTime[args->thread_id]=(std::clock()-startTime[args->thread_id]);
-    //std::cout << "through put :, " << jj /(totalTime[args->thread_id]/CLOCKS_PER_SEC)
+    std::cout << "through put :, " << jj /(totalTime[args->thread_id]/CLOCKS_PER_SEC)
              //<< ",per sec  time  :," << (totalTime[args->thread_id]/CLOCKS_PER_SEC)
-    std::cout << ",min latency  :," << (lastminforeach/CLOCKS_PER_SEC)
+             << ",min latency  :," << (lastminforeach/CLOCKS_PER_SEC)
              << ",max latency  :," << (lastmaxforeach/CLOCKS_PER_SEC)
              << ",total opration," << jj<<std::endl;
     UA_Variant_deleteMembers(&value);
@@ -472,7 +472,7 @@ int main(int argc, char *argv[]) {
 
             pthread_create(&(ftid[counter]), NULL, &connectToClient, (void *) &args1[counter]);
             nodeGenerator = nodeGenerator + 2;
-            usleep(10000);
+            sleep(1);
             //pthread_create(&(rtid[counter]), NULL, &taskWrite, (void *) &thread_id[counter]);  //
         }
 

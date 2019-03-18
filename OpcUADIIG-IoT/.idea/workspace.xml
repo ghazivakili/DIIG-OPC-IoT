@@ -37,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main-server.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main-server.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2128">
+            <state relative-caret-position="589">
               <caret line="112" selection-start-line="112" selection-end-line="112" />
             </state>
           </provider>
@@ -76,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="standards.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="standards.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/standards.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-475">
@@ -336,12 +336,12 @@
       <workItem from="1552680899543" duration="13967000" />
       <workItem from="1552720877021" duration="3913000" />
       <workItem from="1552734444488" duration="2947000" />
-      <workItem from="1552909806977" duration="4580000" />
+      <workItem from="1552909806977" duration="5014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="377800000" />
+    <option name="totallyTimeSpent" value="378234000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -560,17 +560,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2128">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/standards.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-475">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
         </state>
       </provider>
     </entry>
