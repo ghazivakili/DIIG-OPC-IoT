@@ -72,8 +72,8 @@ int main(int argc, char *argv[]) {
         config.usernamePasswordLogins[1]=useriot;
         config.enableUsernamePasswordLogin= UA_TRUE;
         config.enableAnonymousLogin = UA_TRUE; //should be false
-        config.maxSessions = 1000;
-        config.maxSecureChannels= 1000;
+        config.maxSessions = 2000;
+        config.maxSecureChannels= 2000;
         server = UA_Server_new(config);
 
         struct arg_struct args1[NTHREAD];
@@ -101,8 +101,8 @@ int main(int argc, char *argv[]) {
 
             Nodename = argv[i];
             printf("argv[%d] = %s \n", i, argv[i]);
-            //pthread_create(&(ftid[i]), NULL, &Readdata, (void *) &args1[i]);
-            usleep(50000);
+            pthread_create(&(ftid[i]), NULL, &Readdata, (void *) &args1[i]);
+            usleep(5000);
 
         }
 
