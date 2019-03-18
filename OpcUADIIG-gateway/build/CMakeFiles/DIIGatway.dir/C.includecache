@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.c
+/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.c
 open62541.h
-/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.h
+/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.h
 limits.h
 -
 time.h
@@ -78,7 +78,7 @@ stdarg.h
 pthread.h
 -
 
-/home/mohamad/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.h
+/home/photonextdev/workspace/DIIG-OPC-IoT/OpcUADIIG-gateway/src/open62541.h
 stddef.h
 -
 stdint.h

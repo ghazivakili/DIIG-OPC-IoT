@@ -235,16 +235,16 @@ connection:
     if(retval != UA_STATUSCODE_GOOD) {
         UA_Client_delete(client);
         std::cout<<"error code"<< (int)retval<<std::endl;
-        usleep(500000);// retry connection
+        sleep(5);// retry connection
         ii++;
-        if(ii<1)
+        if(ii<3)
             goto connection;
         else
             exit(0);
 
     } else{
         printf("connected goood~! %d \n", args->NodId);
-        usleep(1000000);// delay for stablish the connectio
+        sleep(2);// delay for stablish the connectio
 
     }
 
