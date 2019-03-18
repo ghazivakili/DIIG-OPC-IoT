@@ -40,8 +40,8 @@
       <file leaf-file-name="main-server.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="411">
+              <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -333,12 +333,12 @@
       <workItem from="1552680899543" duration="13967000" />
       <workItem from="1552720877021" duration="3913000" />
       <workItem from="1552734444488" duration="2947000" />
-      <workItem from="1552909806977" duration="741000" />
+      <workItem from="1552909806977" duration="2020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="373961000" />
+    <option name="totallyTimeSpent" value="375240000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -560,8 +560,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+        <state relative-caret-position="411">
+          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
         </state>
       </provider>
     </entry>
