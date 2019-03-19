@@ -32,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -40,8 +40,8 @@
       <file leaf-file-name="main-server.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="943">
-              <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
+            <state relative-caret-position="1406">
+              <caret line="74" column="9" selection-start-line="74" selection-start-column="8" selection-end-line="75" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -58,8 +58,8 @@
       <file leaf-file-name="open62541.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/open62541.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="11653" column="31" selection-start-line="11653" selection-start-column="22" selection-end-line="11653" selection-end-column="31" />
+            <state relative-caret-position="347">
+              <caret line="9982" column="1" lean-forward="true" selection-start-line="9982" selection-start-column="1" selection-end-line="9982" selection-end-column="1" />
               <folding>
                 <element signature="e#437654#437669#0" expanded="true" />
               </folding>
@@ -79,8 +79,8 @@
       <file leaf-file-name="standards.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/standards.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="379" column="10" selection-start-line="379" selection-start-column="10" selection-end-line="379" selection-end-column="10" />
+            <state relative-caret-position="272">
+              <caret line="328" column="76" selection-start-line="328" selection-start-column="8" selection-end-line="328" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -110,6 +110,7 @@
       <find>arg_struct</find>
       <find>password</find>
       <find>node500</find>
+      <find>value</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -336,12 +337,12 @@
       <workItem from="1552680899543" duration="13967000" />
       <workItem from="1552720877021" duration="3913000" />
       <workItem from="1552734444488" duration="2947000" />
-      <workItem from="1552909806977" duration="5900000" />
+      <workItem from="1552909806977" duration="8244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="379120000" />
+    <option name="totallyTimeSpent" value="381464000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -363,7 +364,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.42616743" weight="0.28219852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.9214167" visible="true" weight="0.30374905" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.9214167" visible="true" weight="0.009181331" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.59395975" weight="0.45837957" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -529,20 +530,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main-server.cpp" />
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -552,11 +539,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/open62541.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="11653" column="31" selection-start-line="11653" selection-start-column="22" selection-end-line="11653" selection-end-column="31" />
+        <state relative-caret-position="347">
+          <caret line="9982" column="1" lean-forward="true" selection-start-line="9982" selection-start-column="1" selection-end-line="9982" selection-end-column="1" />
           <folding>
             <element signature="e#437654#437669#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main-server.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="74" column="9" selection-start-line="74" selection-start-column="8" selection-end-line="75" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -567,10 +561,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/standards.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="379" column="10" selection-start-line="379" selection-start-column="10" selection-end-line="379" selection-end-column="10" />
+        <state relative-caret-position="272">
+          <caret line="328" column="76" selection-start-line="328" selection-start-column="8" selection-end-line="328" selection-end-column="80" />
         </state>
       </provider>
     </entry>

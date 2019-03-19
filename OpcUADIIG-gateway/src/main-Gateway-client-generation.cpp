@@ -268,18 +268,19 @@ connection:
     //UA_Int32 dataG[nx] = {2, jj, dis(gen), dis(gen), dis(gen), dis(gen), dis(gen), dis(gen), dis(gen), dis(gen)};
     UA_Int32 dataG[nxl] = {2, jj, 1, 1, 1, 1, 1,1, 1,1};
     totalloop=args->totalOpration;
-    startTime[args->thread_id] = std::clock();
-    startTimeForloop = std::clock();
+
  //   while (jj<= optotal || ((std::clock()-startTimeForloop)/CLOCKS_PER_SEC) <= 10 ) {
     //while (jj<= optotal ) {
     printf("step1~! %d \n", args->NodId);
+    startTime[args->thread_id] = std::clock();
+    startTimeForloop = std::clock();
     //while (1) {
     while (jj < totalloop ) {
 
 
        // dataG[1] = 2;//{2,1,23,5,5,54,4,5,8,4};
         retry:
-        startTimeforEach = std::clock();
+        //startTimeforEach = std::clock();
 
       //  if(status_1==1 || status_2==1 || status_3==1 || status_4==1) {
 
@@ -319,7 +320,7 @@ connection:
                         //printf("step4~ %d ! %d \n",jj, args->NodId);
                         //printf("witen goood~! %d -int = %d - %d \n", args->NodId,jj,total[args->thread_id]);
 
-
+/*
                      stopTimeforEach = std::clock();
                         latencyforeach = stopTimeforEach - startTimeforEach;
                         if (jj == 2) {
@@ -330,7 +331,7 @@ connection:
                         }
                         if (latencyforeach >= lastmaxforeach) {
                             lastmaxforeach = latencyforeach;
-                        }
+                        }*/
 
 //                        status_1=0;
 //                        status_2=0;
@@ -339,10 +340,10 @@ connection:
 
                     } else {
 
-                        pthread_mutex_lock(&full_mutex);
+                        //pthread_mutex_lock(&full_mutex);
                         std::cout << "error code" << (int) status << "nodeID" << args->NodId << std::endl;
                         //std::cout<<"read data="<< checkp << "; loop number=" << jj << "nodeID=" << args->NodId<<std::endl;
-                        pthread_mutex_unlock(&full_mutex);
+                       // pthread_mutex_unlock(&full_mutex);
                         exit(0);
                     }
                 }else
@@ -362,24 +363,26 @@ connection:
 //      }
 
     }
-
+    pthread_mutex_lock(&full_mutex);
+    totalTime[args->thread_id]=(std::clock()-startTime[args->thread_id]);
+    pthread_mutex_unlock(&full_mutex);
     ///    DB8[*id]=0x01;
 
 //    pthread_mutex_lock(&full_mutex);
 //    total[args->thread_id] = ++jj;
 //    pthread_mutex_unlock(&full_mutex);
     /* Clean up */
-    pthread_mutex_lock(&full_mutex);
+    //pthread_mutex_lock(&full_mutex);
     //std::cout << "starttime" << startTimeForloop << "stop time" << std::clock() << std::endl;
-    totalTime[args->thread_id]=(std::clock()-startTime[args->thread_id]);
+    //totalTime[args->thread_id]=(std::clock()-startTime[args->thread_id]);
     std::cout << "through put :, " << jj /(totalTime[args->thread_id]/CLOCKS_PER_SEC)
              //<< ",per sec  time  :," << (totalTime[args->thread_id]/CLOCKS_PER_SEC)
-             << ",min latency  :," << (lastminforeach/CLOCKS_PER_SEC)
-             << ",max latency  :," << (lastmaxforeach/CLOCKS_PER_SEC)
+             //<< ",min latency  :," << (lastminforeach/CLOCKS_PER_SEC)
+            // << ",max latency  :," << (lastmaxforeach/CLOCKS_PER_SEC)
              << ",total opration," << jj<<std::endl;
     UA_Variant_deleteMembers(&value);
     UA_Client_delete(client); /* Disconnects the client internally */
-    pthread_mutex_unlock(&full_mutex);
+    //pthread_mutex_unlock(&full_mutex);
     return UA_STATUSCODE_GOOD;
 
 
