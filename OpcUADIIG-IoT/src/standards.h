@@ -330,15 +330,15 @@ void * Readdata(void *arguments) {
         //printf("read is GOOD %d\n" , args->NodeId);
         //checkValue= value.data;
 
-        pthread_mutex_unlock(&full_mutex);
+        //pthread_mutex_unlock(&full_mutex);
 
 
         if (check == UA_STATUSCODE_GOOD && value.data!=NULL) {
-            pthread_mutex_lock(&full_mutex);
+            //pthread_mutex_lock(&full_mutex);
 
             valueArr = (UA_Int32 *) value.data;
 
-            pthread_mutex_unlock(&full_mutex);
+            //pthread_mutex_unlock(&full_mutex);
             // usleep(2000);
 
 
@@ -351,14 +351,14 @@ void * Readdata(void *arguments) {
                 for (int i = 2; i <= 9; i++){
                     p.data[(i)] = valueArr[i];
                 }
-                pthread_mutex_lock(&full_mutex);
+                //pthread_mutex_lock(&full_mutex);
                 qDataPull.push(p);
-                pthread_mutex_unlock(&full_mutex);
+                //pthread_mutex_unlock(&full_mutex);
 
 
-                pthread_mutex_lock(&full_mutex);
+                //pthread_mutex_lock(&full_mutex);
                 check =UA_Server_writeValue(server,args->NodeId,v3);
-                pthread_mutex_unlock(&full_mutex);
+                //pthread_mutex_unlock(&full_mutex);
                 //usleep(2000);
 
                 //pthread_mutex_unlock(&full_mutex);
@@ -372,12 +372,12 @@ void * Readdata(void *arguments) {
 
             // }
 
-            //usleep(500);//2000-10000
+            usleep(50);//2000-10000; was 0 then commented 28 may has been changed
 
         }
-        //pthread_mutex_unlock(&full_mutex);
-        //usleep(50);
-        //nanosleep(&tim, (struct timespec *)NULL);
+        pthread_mutex_unlock(&full_mutex);
+        //usleep(1);
+        nanosleep(&tim, (struct timespec *)NULL);
 
 
     }

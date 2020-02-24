@@ -91,9 +91,12 @@ int main(int argc, char *argv[]) {
 
             printf("argv[%d] = %s \n", i, argv[i]);
             addVariableType2DPoint(server, Nodename);
+	    usleep(100);
             args1[i].NodeId=addVariable(server,Nodename);
-            args1[i].db_id= db_id;
+            usleep(100);
+	    args1[i].db_id= db_id;
             addVariableFail(server, Nodename);
+            
             usleep(5000);
             //pthread_create(&(ftid[i]), NULL, &Readdata, (void *) &args1[i]);
         }
